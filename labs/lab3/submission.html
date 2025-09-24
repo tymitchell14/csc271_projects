@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title> Submit Your Own Recipe</title>
+</head>
+
+<body>
+    <h2><a href = "index.html">Homepage</a> &emsp;&emsp;&emsp; <a href = "submission.html">Submission</a></h2>
+    <form action = "index.html">
+        <p>Name</p>
+        <input type = "text" name = "name" size = "20" maxlength = "30">
+
+        <p>Ingredients and Instructions</p>
+        <textarea name ="ingredients" cols = "30" rows = "6"></textarea>
+
+        <p>Difficulty Level</p>
+        <p>
+            <input type = "radio" name = "difficulty" value = "easy"> easy
+            <input type = "radio" name = "difficulty" value = "easy"> medium
+            <input type = "radio" name = "difficulty" value = "easy"> hard
+        </p>
+
+        <p>Dietary Preference</p>
+        <p>
+            <input type = "checkbox" name = "dietary" value = "vegan"> vegan
+            <input type = "checkbox" name = "dietary" value = "vegetarian"> vegetarian
+        </p>
+        <p>Submit Recipe</p>
+        <input type = "submit" name = "recipe" value = "Submit">
+
+    </form>
+
+</body>

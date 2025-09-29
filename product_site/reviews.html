@@ -6,20 +6,22 @@
 <html lang = "en">
     <head>
         <!-- character encoding error solved using this guide from W3: 
-        https://www.w3.org/International/questions/qa-html-encoding-declarations-->
-            
-        <meta charset ="utf-8">
+        https://www.w3.org/International/questions/qa-html-encoding-declarations-->    
+        <meta charset = "utf-8">
+
         <title>RateGames | Reviews</title>
+        <link href = "css/rategames.css" type = "text/css" rel = "stylesheet">
+
     </head>
 
     <body>
     <!-- navigation bar which will contain the links that go to different pages on the website, the logo links to the homepage -->
 
-        <h3>
+        <h3 id = "navbar">
             &emsp;
             <a href = "homepage.html">Homepage</a>&emsp;&emsp;&emsp;&emsp;&emsp;
             <a href = "reviews.html">Reviews</a>&emsp;&emsp;&emsp;&emsp;&emsp;
-            Lists&emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href = "lists.html">Lists</a>&emsp;&emsp;&emsp;&emsp;&emsp;
             About Us&emsp;&emsp;&emsp;&emsp;&emsp;
             FAQ&emsp;&emsp;&emsp;&emsp;&emsp;
             Profile
@@ -44,7 +46,7 @@
         <h2>Search</h2>
         <form action = "reviews.html">
             <p>Enter game name
-                <input type = "text" name = "prompt" size = "60" maxlength = "60" required> &emsp;
+                <input class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" required> &emsp;
                 <input type = "checkbox" name = "genre" value = "action-adventure">
                 Action-Adventure
                 <input type = "checkbox" name = "genre" value = "rpg">
@@ -62,7 +64,7 @@
                 <input type = "checkbox" name = "genre" value = "fighting">
                 Fighting &emsp;
 
-                <input type = "submit" value = "Submit">
+                <input class = "submit_button" type = "submit" value = "Submit">
             </p>
         </form>
 
@@ -86,10 +88,10 @@
                 <br>
 
                 Enter in a comment <br>
-                <textarea name = "comments" rows = "20" cols = "100"> </textarea>
+                <textarea id = "comment" name = "comments" rows = "20" cols = "100"> </textarea>
 
                 <br>
-                <input type = "submit" value = "Submit">
+                <input class = "submit_button" type = "submit" value = "Submit">
             </p>
         </form>
 

@@ -1,0 +1,112 @@
+/* Ty Mitchell */
+/* 9/29/25 */
+/* This page is the style sheet for the RateGames website */
+
+
+/*sets background color to a dark grey*/
+body {
+    background-color: #2f2b2b;
+    padding-left: 20px;
+}
+
+/*general font is set to Arial with a white color*/
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    color:azure;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+ul {
+    font-family:Arial, Helvetica, sans-serif;
+    color:azure; 
+}
+
+/*tables have a light grey background*/
+table {
+    font-family:Arial, Helvetica, sans-serif;
+    color:azure;
+    background-color:#403a3a;
+}
+
+/*puts a border on cells in a table*/
+td {
+    border-style:solid;
+    border-width: 2px;
+    border-color:black;
+}
+
+/*all horizontal rules are colored blue to break up sections*/
+hr {
+    border-width: 6px;
+    border-color:rgb(71, 71, 241);
+}
+
+/*untouched links are blue, visited links are purple, and hovered over links are light blue*/
+a:link {
+    color:rgb(76, 207, 255);
+}
+
+a:visited {
+    color:rgb(198, 143, 250);
+}
+
+a:hover {
+    color:aqua;
+}
+
+/*All headers are set to the Gill Sans font and colored white*/
+h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+
+h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+
+h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+
+/*image border class gives image a rounded black border*/
+img.border {
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+/*grey_background class gives text input fields a grey background and increases the font size*/
+input.grey_background {
+    background-color:#f5e9e9;
+    font-size: medium;
+    color: black;
+}
+
+/*submit_button class gives form submission buttons grey with a black border*/
+input.submit_button {
+    background-color:#2f2b2b;
+    color: azure;
+    border-width: 4px;
+    border-radius: 8px;
+    border-color:black;
+    font-size:large;
+}
+
+/*comment id is meant to give the review comment text area a grey background and icnreased font size*/
+#comment {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f5e9e9;
+    font-size: medium;
+    color: black;
+}
+
+/*navbar id gives the navbar that exists in every page a center align*/
+#navbar {
+    text-align: center;
+}

@@ -17,104 +17,108 @@
 
 
     <body>
+        <!-- header containing logo and navbar-->
+        <header>
+            <div class = "header">
+                <!-- logo image linked -->
+                <img src = "images/Mitchell_Logo.png" alt = "logo" width = "70" height = "70" id = "float_img">
+                <h3>
+                <!-- navigation bar which will contain the links that go to different pages on the website, the logo links to the homepage -->
+                    <a href = "homepage.html">Homepage</a>
+                    <a href = "reviews.html">Reviews</a>
+                    <a href = "lists.html">Lists</a>
+                    About Us
+                    FAQ
+                    Profile
+                </h3>
+            </div>
 
-        <!-- navigation bar which will contain the links that go to different pages on the website, the logo links to the homepage -->
-        <h3 id = "navbar">
-            &emsp;
-            <a href = "homepage.html">Homepage</a>&emsp;&emsp;&emsp;&emsp;&emsp;
-            <a href = "reviews.html">Reviews</a>&emsp;&emsp;&emsp;&emsp;&emsp;
-            <a href = "lists.html">Lists</a>&emsp;&emsp;&emsp;&emsp;&emsp;
-            About Us&emsp;&emsp;&emsp;&emsp;&emsp;
-            FAQ&emsp;&emsp;&emsp;&emsp;&emsp;
-            Profile
-        </h3>
+        </header>
 
-        <!-- logo image linked -->
+  
+        <div class = "content_box">
+            <!-- title of website -->
+            <h1>RateGames</h1>
 
-        <img src = "images/Mitchell_Logo.png" alt = "RateGames logo containing text displaying the name along with a game controller"
-        width = "150" height = "150"> 
+            <!-- paragraph providing users with a description of what the website is about -->
+            <p>
+                <strong>RateGames</strong> is an all in one place where you can <em>rate</em> and <em>write</em> reviews for video games.
+                You can have all of your reviews here no matter what platform you played it on. Look at 
+                reviews of others to see their opinions or get reccomendations for your backlog. Create 
+                lists of your favorite games to let others know what you enjoy. <strong>RateGames</strong> is the best
+                platform to review and catalog the games you love.
+                
+            </p>
 
-        <!-- title of website -->
-        <h1>RateGames</h1>
+            <br> <hr>
 
-        <!-- paragraph providing users with a description of what the website is about -->
-        <p>
-            <strong>RateGames</strong> is an all in one place where you can <em>rate</em> and <em>write</em> reviews for video games.
-            You can have all of your reviews here no matter what platform you played it on. Look at 
-            reviews of others to see their opinions or get reccomendations for your backlog. Create 
-            lists of your favorite games to let others know what you enjoy. <strong>RateGames</strong> is the best
-            platform to review and catalog the games you love.
+            <!-- features subsection describing what you can do on the website -->
+
+            <h2>Features</h2>
+
+            <ul>
+
+                <li>Create reviews for games where you can rate them from 1-5 and write your thoughts.</li>
+                <li>Create lists of your favorite games or games that you think belong together</li>
+                <li>View reviews of others and like on the ones you enjoyed.</li>
+                <li>View lists of others to get ideas on what games to add to your backlog</li>
+                <li>Look at your profile to see the catalog of games you've played and reviewed.</li>
+
+            </ul>
+
+            <br> <hr>
+
+            <!-- example review showing new users what a review on this site looks like, game title links to it's store page-->
+
+            <h2>Example Review</h2>
+            <ul>
+                <li>User: John_Smith</li>
+                <li>Rating: 5/5</li>
+                <li>Game: <em><a href = "https://www.nintendo.com/au/games/nintendo-switch/the-legend-of-zelda-breath-of-the-wild/?srsltid=AfmBOopHWvMtRV9SLjmSwh360TLLNino4NIzzKopizVC1FaMf9no_hSE" target = "_blank">The Legend of Zelda: Breath of the Wild</a></em></li>
+                <li>Awesome game!</li>
+                <li>455 Likes</li>
+            </ul>
+
+            <br> <hr>
+
+            <!-- example list showing users what the current top reviewed games are-->
+            <!-- all screenshots come were taking using the Steam screenshot function on my own personal copies of the games-->
+            <h2>Top Reviewed Games</h2>
+
+            <ul>
+                <li>
+                    <strong><em>Hollow Knight: Silksong</em></strong> <br>
+                    <img class = "border float_img" src = "images/silksong.jpg" alt = "character in a red cloak standing next to a gold cage while inside a mossy cave"
+                    width = "480" height = "270">
+                </li>
             
-        </p>
+                <li>
+                    <strong><em>Elden Ring Nightreign</em></strong> <br>
+                    <img class = "border float_img" src = "images/nightreign.jpg" alt = "character in armor riding on a bird towards a snowy mountain"
+                    width = "480" height = "270"> 
+                </li>
+            
 
-        <br> <hr>
+                <li>
+                    <strong><em>Monster Hunter Wilds</em></strong> <br>
+                    <img class = "border float_img" src = "images/wilds.jpg" alt = "character with a sword on her back standing in front of a desert plain"
+                    width = "480" height = "270"> 
+                </li>
 
-        <!-- features subsection describing what you can do on the website -->
+                <li>
+                    <strong><em>Celeste</em></strong> <br>
+                    <img class = "border float_img" src = "images/celeste.jpg" alt = "character with red hair and backpack standing in front of a memorial in a ruined city"
+                    width = "480" height = "270"> 
+                </li>
 
-        <h2>Features</h2>
-
-        <ul>
-
-            <li>Create reviews for games where you can rate them from 1-5 and write your thoughts.</li>
-            <li>Create lists of your favorite games or games that you think belong together</li>
-            <li>View reviews of others and like on the ones you enjoyed.</li>
-            <li>View lists of others to get ideas on what games to add to your backlog</li>
-            <li>Look at your profile to see the catalog of games you've played and reviewed.</li>
-
-        </ul>
-
-        <br> <hr>
-
-        <!-- example review showing new users what a review on this site looks like, game title links to it's store page-->
-
-        <h2>Example Review</h2>
-        <ul>
-            <li>User: John_Smith</li>
-            <li>Rating: 5/5</li>
-            <li>Game: <em><a href = "https://www.nintendo.com/au/games/nintendo-switch/the-legend-of-zelda-breath-of-the-wild/?srsltid=AfmBOopHWvMtRV9SLjmSwh360TLLNino4NIzzKopizVC1FaMf9no_hSE" target = "_blank">The Legend of Zelda: Breath of the Wild</a></em></li>
-            <li>Awesome game!</li>
-            <li>455 Likes</li>
-        </ul>
-
-        <br> <hr>
-
-        <!-- example list showing users what the current top reviewed games are-->
-        <!-- all screenshots come were taking using the Steam screenshot function on my own personal copies of the games-->
-        <h2>Top Reviewed Games</h2>
-
-        <ul>
-            <li>
-                <strong><em>Hollow Knight: Silksong</em></strong> <br>
-                <img class = "border" src = "images/silksong.jpg" alt = "character in a red cloak standing next to a gold cage while inside a mossy cave"
-                width = "480" height = "270">
-            </li>
+                <li>
+                    <strong><em>Terraria</em></strong> <br>
+                    <img class = "border float_img" src = "images/terraria.jpg" alt = "pixelated character standing in a forest"
+                    width = "480" height = "270"> 
+                </li>
         
-            <li>
-                <strong><em>Elden Ring Nightreign</em></strong> <br>
-                 <img class = "border" src = "images/nightreign.jpg" alt = "character in armor riding on a bird towards a snowy mountain"
-                width = "480" height = "270"> 
-            </li>
-           
-
-            <li>
-                <strong><em>Monster Hunter Wilds</em></strong> <br>
-                <img class = "border" src = "images/wilds.jpg" alt = "character with a sword on her back standing in front of a desert plain"
-                width = "480" height = "270"> 
-            </li>
-
-            <li>
-                <strong><em>Celeste</em></strong> <br>
-                <img class = "border" src = "images/celeste.jpg" alt = "character with red hair and backpack standing in front of a memorial in a ruined city"
-                width = "480" height = "270"> 
-            </li>
-
-            <li>
-                <strong><em>Terraria</em></strong> <br>
-                <img class = "border" src = "images/terraria.jpg" alt = "pixelated character standing in a forest"
-                width = "480" height = "270"> 
-            </li>
-    
-        </ul>
+            </ul>
+        <div>
 
         <br> <hr>
 

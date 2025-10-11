@@ -52,9 +52,6 @@ a:visited {
     color:rgb(198, 143, 250);
 }
 
-a:hover {
-    color:aqua;
-}
 
 /*All headers are set to the Gill Sans font and colored white*/
 h1 {
@@ -105,43 +102,86 @@ input.submit_button {
     color: black;
 }
 
-/*header styling*/
+/*header class sets overflow property, background color, and adds padding*/
 .header {
-    display:flex;
-    background-color:rgb(71, 71, 241);
-    width: 1200px;
+    overflow: hidden;
+    background-color:blue;
     padding: 10px;
-    color:white;
+}
+
+/*header links class floats the links to the right, changes text style, and adds padding*/
+.header_links {
+    float:right;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    float: left;
-    overflow:auto;
-    
+    color:white;
+    font-size: large;
+    padding:5px;
 }
 
-/*floats images to the left and gives them a margin*/
-#float_img {
-    float:left;
-    margin: 10px;
+/*hovering over links makes the font size bigger*/
+a:hover {
+    font-size:110%;
+    color:aqua;
 }
 
-/*main content box styling*/
-.content_box {
-    float:left;
-    padding: 15px;
-    width: 1000px;
+/*active links have a white background with a red text color*/
+a:active {
+    font-size: 30px;
+    color:red;
+    background-color:white;
+}
+
+/*styles content to have a smaller width and center in the middle of the screen*/
+.content {
+    width:75%;
     background-color:#2f2b2b;
-    margin: 100px auto 100px auto;
+    padding:10px;
+    margin: auto;
 }
 
-@media only screen and (max-width: 600px) {
-    .header {
-        float:none;
-        text-align:left;
+.content_left {
+    float: left;
+    width:60%;
+}
+
+.content_right {
+    float: right;
+    width:40%;
+}
+
+/*clears float*/
+.clear {
+    float:none;
+}
+
+/*classes to float img left and right*/
+.float_left {
+    float:left;
+    margin:10px;
+}
+.float_right {
+    float:right;
+    margin:10px;
+}
+
+
+/*rules for screen sizes under 600*/
+@media only screen and (max-width:600px) {
+    /*clear floats*/
+    .header_links {
+        float: none;
+        text-align: right;
     }
 
-    .content_box {
-        width:100%;
-        font-size: large;
+    /*set content width to make and increase font to make it more readable*/
+    .content {
+        width: 100%;
+        font-size: 24px;
+    }
 
+    /*make images scale to the smaller screen size*/
+    img {
+        width: 100%;
+        height: auto;
     }
 }

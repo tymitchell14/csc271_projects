@@ -112,6 +112,13 @@ input.submit_button {
     padding: 10px;
 }
 
+.header_logo {
+    border-width:4px;
+    border-radius:4px;
+    border-color:black;
+    float:left;
+}
+
 /*header links class floats the links to the right, changes text style, and adds padding*/
 .header_links {
     float:right;
@@ -123,13 +130,13 @@ input.submit_button {
 
 /*hovering over links makes the font size bigger*/
 a:hover {
-    font-size:110%;
+    font-size:105%;
     color:aqua;
 }
 
 /*active links have a white background with a red text color*/
 a:active {
-    font-size: 30px;
+    font-size:105%;
     color:red;
     background-color:white;
 }
@@ -148,7 +155,7 @@ a:active {
     clear:both;
 }
 
-/*classes to float img left and right*/
+/*classes to float img left, right, center*/
 .float_left {
     float:left;
 }
@@ -173,9 +180,8 @@ a:active {
     font-size:35px;
 }
 
-/*all images should float to the left and have a margin*/
+/*all images should have a margin*/
 img {
-    float:left;
     margin:10px;
 
 }
@@ -200,19 +206,11 @@ img.border {
 
 
 /*rules for screens 1600px and under*/
-@media only screen and (max-width:1400px) {
-    .content_left {
-        float: none;
-        width:100%;
-    }
+@media only screen and (max-width:1300px) {
 
     .content_right {
         float: none;
         width:100%;
-    }
-
-    .float_left {
-        float:none;
     }
 
     .float_right {
@@ -221,9 +219,7 @@ img.border {
     .content {
         width:100%;
     }
-    img {
-        float:none;
-    }
+ 
  
 }
 
@@ -245,7 +241,6 @@ img.border {
     img {
         max-width: 100%;
         height: auto;
-        float:none;
     }
     .content_left {
         float: none;

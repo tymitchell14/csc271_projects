@@ -17,112 +17,132 @@
     </head>
 
     <body>
-        <!-- navigation bar which will contain the links that go to different pages on the website, the logo links to the homepage -->
-        <h3 id = "navbar">
-            &emsp;
-            <a href = "homepage.html">Homepage</a>&emsp;&emsp;&emsp;&emsp;&emsp;
-            <a href = "reviews.html">Reviews</a>&emsp;&emsp;&emsp;&emsp;&emsp;
-            <a href = "lists.html">Lists</a>&emsp;&emsp;&emsp;&emsp;&emsp;
-            About Us&emsp;&emsp;&emsp;&emsp;&emsp;
-            FAQ&emsp;&emsp;&emsp;&emsp;&emsp;
-            Profile
-        </h3>
+     <!-- header containing logo and navbar-->
+     <header>
+            <div class = "header">
 
-        <!-- logo image linked -->
-        <img src = "images/Mitchell_Logo.png" alt = "RateGames logo containing text displaying the name along with a game controller"
-        width = "150" height = "150"> 
-        
-        <!-- header showing page name along with a paragraph explaining purpose of the page-->
-        <h1>Lists</h1>
+                <!-- logo image linked -->
+                <img src = "images/Mitchell_Logo.png" alt = "logo" width = "80" height = "80" id = "float_img">
 
-        <p>
-            This is the lists page where you search up lists of great games created by other users. You can also search up
-            individual games to create and compile your own lists of games based on whatever theme you would like.
-        </p>
+                <div class = "header_links">
 
-        <br> <hr>
+                    <!-- navigation bar which will contain the links that go to different pages on the website, the logo links to the homepage -->
+                    <h3>
+                        <a href = "homepage.html">Homepage</a>&emsp;
+                        <a href = "reviews.html">Reviews</a>&emsp;
+                        <a href = "lists.html">Lists</a>&emsp;
+                        About Us&emsp;
+                        FAQ&emsp;
+                        Profile
+                    </h3>
 
-        <!-- list search section where users can look up other user's lists-->
+                </div>
 
-        <h2>Search</h2>
-        <form action = "lists.html">
-            <p>Enter list name
-                <input class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" required>
-                <input class = "submit_button" type = "submit" value = "Submit">
-            </p>
-        </form>
+            </div>
 
-        <br> <br> <br> <br> <br>
-        <hr>
+        </header>
 
-        <!-- list creation section asks users for the name of their list and gives them the option to add games to their list -->
+        <div class ="content">
+            <!-- header showing page name along with a paragraph explaining purpose of the page-->
+            <h1>Lists</h1>
 
-        <h2>Create a List</h2>
-        <form action = "lists.html">
             <p>
-                Enter list name
-                <input class = "grey_background" type = "text" name = "list_name" size = "60" maxlength = "60" required>
+                This is the lists page where you search up lists of great games created by other users. You can also search up
+                individual games to create and compile your own lists of games based on whatever theme you would like.
             </p>
-            <h3>Add games to your list</h3>
-            <ul>
-                <li> <input class = "grey_background" type = "text" name = "list_item1" size = "45" maxlength = "60"> </li>
-                <li> <input class = "grey_background" type = "text" name = "list_item2" size = "45" maxlength = "60"> </li>
-                <li> <input class = "grey_background" type = "text" name = "list_item3" size = "45" maxlength = "60"> </li>
-                <li> <input class = "grey_background" type = "text" name = "list_item4" size = "45" maxlength = "60"> </li>
-                <li> <input class = "grey_background" type = "text" name = "list_item5" size = "45" maxlength = "60"> </li>
-                <li> <input class = "grey_background" type = "text" name = "list_item6" size = "45" maxlength = "60"> </li>
-                <li> <input class = "grey_background" type = "text" name = "list_item7" size = "45" maxlength = "60"> </li>
-                <li> <input class = "grey_background" type = "text" name = "list_item8" size = "45" maxlength = "60"> </li>
-                <li> <input class = "grey_background" type = "text" name = "list_item9" size = "45" maxlength = "60"> </li>
-                <li> <input class = "grey_background" type = "text" name = "list_item10" size = "45" maxlength = "60"> </li>
-            </ul>
-            <input class = "submit_button" type = "submit" value = "Create List">
-        </form>
 
-        <br> <hr>
+            <br> <hr>
 
-        <!-- table showcasing the current most popular user created lists -->
+            <!-- list search section where users can look up other user's lists-->
 
-        <h2>Popular User Created Lists</h2>
-        <table>
-            <tr>
-                <th>Username</th>
-                <th>List Name</th>
-                <th>Likes</th>
-            </tr>
-            <tr>
-                <td>smileycookie</td>
-                <td>Top 10 Games Of The Decade</td>
-                <td>65489</td>
-            </tr>
-            <tr>
-                <td>john28</td>
-                <td>Essential Platformers</td>
-                <td>57894</td>
-            </tr>
-            <tr>
-                <td>angrytoaster</td>
-                <td>Top 100 Must Plays</td>
-                <td>5438</td>
-            </tr>
-            <tr>
-                <td>mrtaco</td>
-                <td>Top 15 Hardest Games</td>
-                <td>1687</td>
-            </tr>
-            <tr>
-                <td>emily42</td>
-                <td>Games With Great Gameplay</td>
-                <td>904</td>
-            </tr>
-        </table>
+            <h2>Search</h2>
+            <form action = "lists.html">
+                <div class = "float_left">
+                    <p>Enter list name
+                        <input class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" required>
+                    </p>
+                </div>
+                <div class = "float_right">
+                    <p>
+                        <input class = "submit_button" type = "submit" value = "Submit">
+                    </p>
+                </div>
+            </form>
 
-        <br> <hr>
+            <br> <br> <br> <br> <br>
+            <hr>
 
-         <!-- footer showing where to contact us (my email) and privacy policy-->
-        <h3>&emsp;<a href = "mailto:ty_mitchell@uri.edu">Contact Us</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Privacy Policy</h3>
+            <!-- list creation section asks users for the name of their list and gives them the option to add games to their list -->
+            <div class = "float_left">
+                <h2>Create a List</h2>
+                <form action = "lists.html">
+                    <p>
+                        Enter list name
+                        <input class = "grey_background" type = "text" name = "list_name" size = "60" maxlength = "60" required>
+                    </p>
+                    <h3>Add games to your list</h3>
+                    <ul>
+                        <li> <input class = "grey_background" type = "text" name = "list_item1" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item2" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item3" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item4" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item5" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item6" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item7" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item8" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item9" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item10" size = "45" maxlength = "60"> </li>
+                    </ul>
+                    <input class = "submit_button" type = "submit" value = "Create List">
+                </form>
+            </div>
+
+            <div class = "float_right">
+                <!-- table showcasing the current most popular user created lists -->
+
+                <h2>Popular User Created Lists</h2>
+                <table>
+                    <tr>
+                        <th>Username</th>
+                        <th>List Name</th>
+                        <th>Likes</th>
+                    </tr>
+                    <tr>
+                        <td>smileycookie</td>
+                        <td>Top 10 Games Of The Decade</td>
+                        <td>65489</td>
+                    </tr>
+                    <tr>
+                        <td>john28</td>
+                        <td>Essential Platformers</td>
+                        <td>57894</td>
+                    </tr>
+                    <tr>
+                        <td>angrytoaster</td>
+                        <td>Top 100 Must Plays</td>
+                        <td>5438</td>
+                    </tr>
+                    <tr>
+                        <td>mrtaco</td>
+                        <td>Top 15 Hardest Games</td>
+                        <td>1687</td>
+                    </tr>
+                    <tr>
+                        <td>emily42</td>
+                        <td>Games With Great Gameplay</td>
+                        <td>904</td>
+                    </tr>
+                </table>
+            </div>
 
 
+            <div class = "footer">
+                <hr> <br>
+                <!-- footer showing where to contact us (my email) and privacy policy-->
+                <h3>&emsp;<a href = "mailto:ty_mitchell@uri.edu">Contact Us</a>&emsp;&emsp;&emsp;Privacy Policy</h3>
+            </div>
+
+        </div>
 
 
 

@@ -57,81 +57,90 @@
 
             <h2>Search</h2>
             <form action = "lists.html">
-                <p>Enter list name
-                    <input class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" required>
-                    <input class = "submit_button" type = "submit" value = "Submit">
-                </p>
+                <div class = "float_left">
+                    <p>Enter list name
+                        <input class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" required>
+                    </p>
+                </div>
+                <div class = "float_right">
+                    <p>
+                        <input class = "submit_button" type = "submit" value = "Submit">
+                    </p>
+                </div>
             </form>
 
             <br> <br> <br> <br> <br>
             <hr>
 
             <!-- list creation section asks users for the name of their list and gives them the option to add games to their list -->
+            <div class = "float_left">
+                <h2>Create a List</h2>
+                <form action = "lists.html">
+                    <p>
+                        Enter list name
+                        <input class = "grey_background" type = "text" name = "list_name" size = "60" maxlength = "60" required>
+                    </p>
+                    <h3>Add games to your list</h3>
+                    <ul>
+                        <li> <input class = "grey_background" type = "text" name = "list_item1" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item2" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item3" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item4" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item5" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item6" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item7" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item8" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item9" size = "45" maxlength = "60"> </li>
+                        <li> <input class = "grey_background" type = "text" name = "list_item10" size = "45" maxlength = "60"> </li>
+                    </ul>
+                    <input class = "submit_button" type = "submit" value = "Create List">
+                </form>
+            </div>
 
-            <h2>Create a List</h2>
-            <form action = "lists.html">
-                <p>
-                    Enter list name
-                    <input class = "grey_background" type = "text" name = "list_name" size = "60" maxlength = "60" required>
-                </p>
-                <h3>Add games to your list</h3>
-                <ul>
-                    <li> <input class = "grey_background" type = "text" name = "list_item1" size = "45" maxlength = "60"> </li>
-                    <li> <input class = "grey_background" type = "text" name = "list_item2" size = "45" maxlength = "60"> </li>
-                    <li> <input class = "grey_background" type = "text" name = "list_item3" size = "45" maxlength = "60"> </li>
-                    <li> <input class = "grey_background" type = "text" name = "list_item4" size = "45" maxlength = "60"> </li>
-                    <li> <input class = "grey_background" type = "text" name = "list_item5" size = "45" maxlength = "60"> </li>
-                    <li> <input class = "grey_background" type = "text" name = "list_item6" size = "45" maxlength = "60"> </li>
-                    <li> <input class = "grey_background" type = "text" name = "list_item7" size = "45" maxlength = "60"> </li>
-                    <li> <input class = "grey_background" type = "text" name = "list_item8" size = "45" maxlength = "60"> </li>
-                    <li> <input class = "grey_background" type = "text" name = "list_item9" size = "45" maxlength = "60"> </li>
-                    <li> <input class = "grey_background" type = "text" name = "list_item10" size = "45" maxlength = "60"> </li>
-                </ul>
-                <input class = "submit_button" type = "submit" value = "Create List">
-            </form>
+            <div class = "float_right">
+                <!-- table showcasing the current most popular user created lists -->
 
-            <br> <hr>
+                <h2>Popular User Created Lists</h2>
+                <table>
+                    <tr>
+                        <th>Username</th>
+                        <th>List Name</th>
+                        <th>Likes</th>
+                    </tr>
+                    <tr>
+                        <td>smileycookie</td>
+                        <td>Top 10 Games Of The Decade</td>
+                        <td>65489</td>
+                    </tr>
+                    <tr>
+                        <td>john28</td>
+                        <td>Essential Platformers</td>
+                        <td>57894</td>
+                    </tr>
+                    <tr>
+                        <td>angrytoaster</td>
+                        <td>Top 100 Must Plays</td>
+                        <td>5438</td>
+                    </tr>
+                    <tr>
+                        <td>mrtaco</td>
+                        <td>Top 15 Hardest Games</td>
+                        <td>1687</td>
+                    </tr>
+                    <tr>
+                        <td>emily42</td>
+                        <td>Games With Great Gameplay</td>
+                        <td>904</td>
+                    </tr>
+                </table>
+            </div>
 
-            <!-- table showcasing the current most popular user created lists -->
 
-            <h2>Popular User Created Lists</h2>
-            <table>
-                <tr>
-                    <th>Username</th>
-                    <th>List Name</th>
-                    <th>Likes</th>
-                </tr>
-                <tr>
-                    <td>smileycookie</td>
-                    <td>Top 10 Games Of The Decade</td>
-                    <td>65489</td>
-                </tr>
-                <tr>
-                    <td>john28</td>
-                    <td>Essential Platformers</td>
-                    <td>57894</td>
-                </tr>
-                <tr>
-                    <td>angrytoaster</td>
-                    <td>Top 100 Must Plays</td>
-                    <td>5438</td>
-                </tr>
-                <tr>
-                    <td>mrtaco</td>
-                    <td>Top 15 Hardest Games</td>
-                    <td>1687</td>
-                </tr>
-                <tr>
-                    <td>emily42</td>
-                    <td>Games With Great Gameplay</td>
-                    <td>904</td>
-                </tr>
-            </table>
-
-            <br> <hr>
-
-            <!-- footer showing where to contact us (my email) and privacy policy-->
-            <h3>&emsp;<a href = "mailto:ty_mitchell@uri.edu">Contact Us</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Privacy Policy</h3>
+            <div class = "footer">
+                <hr> <br>
+                <!-- footer showing where to contact us (my email) and privacy policy-->
+                <h3>&emsp;<a href = "mailto:ty_mitchell@uri.edu">Contact Us</a>&emsp;&emsp;&emsp;Privacy Policy</h3>
+            </div>
 
         </div>
 

@@ -42,148 +42,162 @@
 
         <div class = "content">
 
-            <!-- Short header section describing the purpose of the reviews page -->
+            <div class = "float_left">
 
-            <h1>Reviews</h1>
-            <p> 
-                On the reviews page you can use the search bar to look up the name of any game. 
-                You can also use the filter button to filter your searches based on the genre, year released, and average rating.
-                Click on a game to see it's reviews and even write a review yourself.
-            </p>
+                <!-- Short header section describing the purpose of the reviews page -->
 
-            <!-- form where users can enter in a text prompt and filter by genres to search up a game they would like to review-->
-
-            <h2>Search</h2>
-            <form action = "reviews.html">
-                <p>Enter game name
-                    <input class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" required> &emsp;
-                    <input type = "checkbox" name = "genre" value = "action-adventure">
-                    Action-Adventure
-                    <input type = "checkbox" name = "genre" value = "rpg">
-                    RPG
-                    <input type = "checkbox" name = "genre" value = "horror">
-                    Horror
-                    <input type = "checkbox" name = "genre" value = "platformer">
-                    Platformer
-                    <input type = "checkbox" name = "genre" value = "strategy">
-                    Strategy
-                    <input type = "checkbox" name = "genre" value = "first-person">
-                    First-Person
-                    <input type = "checkbox" name = "genre" value = "sports">
-                    Sports
-                    <input type = "checkbox" name = "genre" value = "fighting">
-                    Fighting &emsp;
-
-                    <input class = "submit_button" type = "submit" value = "Submit">
+                <h1>Reviews</h1>
+                <p> 
+                    On the reviews page you can use the search bar to look up the name of any game. 
+                    You can also use the filter button to filter your searches based on the genre, year released, and average rating.
+                    Click on a game to see it's reviews and even write a review yourself.
                 </p>
-            </form>
 
-            <br> <br> <br> <br> <br>
-            <hr>
+                <br> <hr>
 
-            <!-- Form where users can enter in a rating and review comment for the game they selected with the search function-->
+                <!-- form where users can enter in a text prompt and filter by genres to search up a game they would like to review-->
 
-            <h2>Enter Review</h2>
-            <form action = "reviews.html">
-                <p>
-                    [Selected Game]<br>
-                    Rate from 1 to 5 stars <br>
+                <h2 class = "search_header">Search and Review</h2>
+                <form action = "reviews.html">
+                    <div class = "float_left">
+                        <p>Enter game name
+                            <input class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" required> <br>
+                            <input type = "checkbox" name = "genre" value = "action-adventure">
+                            Action-Adventure
+                            <input type = "checkbox" name = "genre" value = "rpg">
+                            RPG
+                            <input type = "checkbox" name = "genre" value = "horror">
+                            Horror
+                            <input type = "checkbox" name = "genre" value = "platformer">
+                            Platformer
+                            <input type = "checkbox" name = "genre" value = "strategy">
+                            Strategy
+                            <input type = "checkbox" name = "genre" value = "first-person">
+                            First-Person
+                            <input type = "checkbox" name = "genre" value = "sports">
+                            Sports
+                            <input type = "checkbox" name = "genre" value = "fighting">
+                            Fighting 
+                        </p>
+                    </div>
+                    <div class = "float_right">
+                        <p>
+                            <input class = "submit_button" type = "submit" value = "Submit">
+                        </p>
+                    </div>
+                </form>
 
-                    <input type = "radio" name = "rating" value = "one" required> 1
-                    <input type = "radio" name = "rating" value = "two" required> 2
-                    <input type = "radio" name = "rating" value = "three" required> 3
-                    <input type = "radio" name = "rating" value = "four" required> 4
-                    <input type = "radio" name = "rating" value = "five" required> 5
+                <br> <br> <br> <br> <br>
 
-                    <br>
+                <!-- Form where users can enter in a rating and review comment for the game they selected with the search function-->
 
-                    Enter in a comment <br>
-                    <textarea id = "comment" name = "comments" rows = "20" cols = "100"> </textarea>
+                <form action = "reviews.html">
+                    <p>
+                        [Selected Game]<br>
+                        Rate from 1 to 5 stars <br>
 
-                    <br>
-                    <input class = "submit_button" type = "submit" value = "Submit">
-                </p>
-            </form>
+                        <input type = "radio" name = "rating" value = "one" required> 1
+                        <input type = "radio" name = "rating" value = "two" required> 2
+                        <input type = "radio" name = "rating" value = "three" required> 3
+                        <input type = "radio" name = "rating" value = "four" required> 4
+                        <input type = "radio" name = "rating" value = "five" required> 5
 
-            <!-- table listing the current most popular reviews -->
+                        <br>
 
-            <br> <hr>
+                        Enter in a comment <br>
+                        <textarea id = "comment" name = "comments" rows = "20" cols = "100"> </textarea>
 
-            <h2>Popular Reviews</h2>
-            <table>
-                <tr>
-                    <th>User</th>
-                    <th>Rating</th>
-                    <th>Game</th>
-                    <th>Review</th>
-                    <th>Likes</th>
-                </tr>
-                <tr>
-                    <td>smileycookie</td>
-                    <td>4/5</td>
-                    <td>Hollow Knight: Silksong&emsp;</td>
-                    <td>Fun and challenging</td>
-                    <td>759</td>
-                </tr>
-                <tr>
-                    <td>john28</td>
-                    <td>3/5</td>
-                    <td>Split Fiction&emsp;</td>
-                    <td>Fun game to play with a friend</td>
-                    <td>1000</td>
-                </tr>
-                <tr>
-                    <td>angrytoaster</td>
-                    <td>1/5</td>
-                    <td>Donkey Kong Bananza&emsp;</td>
-                    <td>Thought it was boring</td>
-                    <td>427</td>
-                </tr>
-                <tr>
-                    <td>mrtaco</td>
-                    <td>5/5</td>
-                    <td>Mario Kart World&emsp;</td>
-                    <td>Feels great to play!</td>
-                    <td>512</td>
-                </tr>
-                <tr>
-                    <td>emily42</td>
-                    <td>2/5</td>
-                    <td>Monster Hunter Wilds&emsp;</td>
-                    <td>Bad performance issues</td>
-                    <td>678</td>
-                </tr>
-            </table>
+                        <br>
+                        <input class = "submit_button" type = "submit" value = "Select Game">
+                    </p>
+                </form>
 
-            <br> <hr>
+                <!-- table listing the current most popular reviews -->
+
+                <br> <hr>
+            </div>
+
+
+            <div class = float_left>
+
+    
+                <h2>Popular Reviews</h2>
+                <table>
+                    <tr>
+                        <th>User</th>
+                        <th>Rating</th>
+                        <th>Game</th>
+                        <th>Review</th>
+                        <th>Likes</th>
+                    </tr>
+                    <tr>
+                        <td>smileycookie</td>
+                        <td>4/5</td>
+                        <td>Hollow Knight: Silksong&emsp;</td>
+                        <td>Fun and challenging</td>
+                        <td>759</td>
+                    </tr>
+                    <tr>
+                        <td>john28</td>
+                        <td>3/5</td>
+                        <td>Split Fiction&emsp;</td>
+                        <td>Fun game to play with a friend</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>angrytoaster</td>
+                        <td>1/5</td>
+                        <td>Donkey Kong Bananza&emsp;</td>
+                        <td>Thought it was boring</td>
+                        <td>427</td>
+                    </tr>
+                    <tr>
+                        <td>mrtaco</td>
+                        <td>5/5</td>
+                        <td>Mario Kart World&emsp;</td>
+                        <td>Feels great to play!</td>
+                        <td>512</td>
+                    </tr>
+                    <tr>
+                        <td>emily42</td>
+                        <td>2/5</td>
+                        <td>Monster Hunter Wilds&emsp;</td>
+                        <td>Bad performance issues</td>
+                        <td>678</td>
+                    </tr>
+                </table>
+            </div>
 
             <!-- List of embedded popular youtube reviews created by gaming journalist outlets such as IGN and GameSpot-->
+            <div class = "float_right">
+                <h2>Popular Gaming Outlet Reviews</h2>
+                <ul>
+                    <li>
+                        <h4>Hollow Knight: Silksong Review - IGN</h4>
+                        <iframe src = "https://www.youtube.com/embed/ABrZO-9_snQ" width ="448" height = "252"></iframe>
+                    </li>
 
-            <h2>Popular Gaming Outlet Reviews</h2>
-            <ul>
-                <li>
-                    <h4>Hollow Knight: Silksong Review - IGN</h4>
-                    <iframe src = "https://www.youtube.com/embed/ABrZO-9_snQ" width ="560" height = "315"></iframe>
-                </li>
+
+                    <li>
+                        <h4>Donkey Kong Bananza Review - GameSpot</h4>
+                        <iframe src = "https://www.youtube.com/embed/OjAi8kt_8z8" width = "448" height = "252"></iframe>
+                    </li>
+                    
+
+                    <li>
+                        <h4>Hades 2 Review - IGN</h4>
+                        <iframe src = "https://www.youtube.com/embed/gJdt4Ht85eI" width = "448" height = "252"></iframe>
+                    </li>
+
+                </ul>
+            </div>
 
 
-                <li>
-                    <h4>Donkey Kong Bananza Review - GameSpot</h4>
-                    <iframe src = "https://www.youtube.com/embed/OjAi8kt_8z8" width = "560" height = "315"></iframe>
-                </li>
-                
-
-                <li>
-                    <h4>Hades 2 Review - IGN</h4>
-                    <iframe src = "https://www.youtube.com/embed/gJdt4Ht85eI" width = "560" height = "315"></iframe>
-                </li>
-
-            </ul>
-
-            <br> <hr>
-
-            <!-- footer showing where to contact us (my email) and privacy policy-->
-            <h3>&emsp;<a href = "mailto:ty_mitchell@uri.edu">Contact Us</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Privacy Policy</h3>
+            <div class = "footer">
+                <hr> <br>
+                <!-- footer showing where to contact us (my email) and privacy policy-->
+                <h3>&emsp;<a href = "mailto:ty_mitchell@uri.edu">Contact Us</a>&emsp;&emsp;&emsp;&emsp;Privacy Policy</h3>
+            </div>
 
         </div>
 

@@ -31,10 +31,13 @@ table {
 }
 
 /*puts a border on cells in a table*/
-td {
+td, th {
+    text-align:center;
     border-style:solid;
     border-width: 2px;
     border-color:black;
+    padding-top: 20px;
+    padding-bottom:20px;
 }
 
 /*all horizontal rules are colored blue to break up sections*/
@@ -69,26 +72,23 @@ h3 {
     color:white;
 }
 
-/*image border class gives image a rounded black border*/
-img.border {
-    border-style: solid;
-    border-width: 4px;
-    border-radius: 10px;
-    border-color: black;
-}
+
 
 /*grey_background class gives text input fields a grey background and increases the font size*/
 input.grey_background {
-    background-color:#f5e9e9;
+    background-color:#403a3a;
+    border-width: 4px;
+    border-color:black;
+    border-radius: 4px;
     font-size: medium;
-    color: black;
+    color: white;
 }
 
 /*submit_button class gives form submission buttons grey with a black border*/
 input.submit_button {
     background-color:#2f2b2b;
     color: azure;
-    border-width: 4px;
+    border-width: 8px;
     border-radius: 8px;
     border-color:black;
     font-size:large;
@@ -97,9 +97,12 @@ input.submit_button {
 /*comment id is meant to give the review comment text area a grey background and icnreased font size*/
 #comment {
     font-family:Arial, Helvetica, sans-serif;
-    background-color: #f5e9e9;
+    background-color:#403a3a;
+    border-width:4px;
+    border-radius:4px;
     font-size: medium;
-    color: black;
+    color: white;
+    border-color:black;
 }
 
 /*header class sets overflow property, background color, and adds padding*/
@@ -139,6 +142,21 @@ a:active {
     margin: auto;
 }
 
+
+/*clears float*/
+.clear {
+    clear:both;
+}
+
+/*classes to float img left and right*/
+.float_left {
+    float:left;
+}
+
+.float_right {
+    float:right;
+}
+
 .content_left {
     float: left;
     width:60%;
@@ -149,19 +167,35 @@ a:active {
     width:40%;
 }
 
-/*clears float*/
-.clear {
-    float:none;
+/*centers search bar header and makes font bigger*/
+.search_header {
+    text-align:center;
+    font-size:35px;
 }
 
-/*classes to float img left and right*/
-.float_left {
+/*all images should float to the left and have a margin*/
+img {
     float:left;
     margin:10px;
+
 }
-.float_right {
-    float:right;
-    margin:10px;
+
+/*image border class gives image a rounded black border with a margin*/
+img.border {
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+/*class to style footer to be centered and gives it a margin*/
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom:20px;
+    text-align:center;
+    clear:both;
 }
 
 
@@ -176,12 +210,32 @@ a:active {
     /*set content width to make and increase font to make it more readable*/
     .content {
         width: 100%;
-        font-size: 24px;
+        font-size: 40px;
     }
 
     /*make images scale to the smaller screen size*/
     img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
     }
+    .content_left {
+        float: none;
+        width:100%;
+    }
+
+    .content_right {
+        float: none;
+        width:100%;
+    }
+
+    .float_left {
+        float:none;
+    }
+
+    .float_right {
+        float:none;
+    }
+
+
+    
 }

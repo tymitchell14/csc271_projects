@@ -199,6 +199,34 @@ img.border {
 }
 
 
+/*rules for screens 1600px and under*/
+@media only screen and (max-width:1400px) {
+    .content_left {
+        float: none;
+        width:100%;
+    }
+
+    .content_right {
+        float: none;
+        width:100%;
+    }
+
+    .float_left {
+        float:none;
+    }
+
+    .float_right {
+        float:none;
+    }
+    .content {
+        width:100%;
+    }
+    img {
+        float:none;
+    }
+ 
+}
+
 /*rules for screen sizes under 600*/
 @media only screen and (max-width:600px) {
     /*clear floats*/
@@ -217,6 +245,7 @@ img.border {
     img {
         max-width: 100%;
         height: auto;
+        float:none;
     }
     .content_left {
         float: none;

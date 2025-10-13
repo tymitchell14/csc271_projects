@@ -7,13 +7,40 @@
 <html lang = "en">
     <!-- head contains the title for the webpage as displayed in the browser tab-->
     <head>
-        <title>RateGames | Lists</title>
+        <title>RateGames | Compilations of Your Top Games</title>
         <link href = "css/rategames.css" type = "text/css" rel = "stylesheet">
 
          <!-- character encoding error solved using this guide from W3: 
          https://www.w3.org/International/questions/qa-html-encoding-declarations-->
 
         <meta charset = "utf-8">
+    
+        <!--descriptions and keywords-->
+
+        <meta name = "description"
+            content = "The lists page allows user to create game lists, which are compilations of games based on a specific theme.
+            Users can also share lists of their top games with others">
+        <meta name = "keywords"
+            content = "create game lists, compilations, top games, lists">
+
+         <!--open graph tags-->
+        <meta property = "og:title" content = "RateGames">
+        <meta property = "og:description" content = "RateGames is a website where users can review games
+        to share their passion for gaming with others">
+        <meta property = "og:image" content = "images/Mitchell_Logo.png">
+        <meta property = "og:url" content = "https://tymitchell.rhody.dev/csc271_projects/product_site/homepage.html">
+
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V9G1RGCR8Z"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-V9G1RGCR8Z');
+        </script>
+
     </head>
 
     <body>
@@ -47,8 +74,9 @@
             <h1>Lists</h1>
 
             <p>
-                This is the lists page where you search up lists of great games created by other users. You can also search up
-                individual games to create and compile your own lists of games based on whatever theme you would like.
+                On the lists page you can look at compilations of great games created by other users. You can also search up
+                individual games to create game lists based on whatever theme you would like. For example, you might want to create a list
+                of the top games you've played this year.
             </p>
 
             <br> <hr>
@@ -74,7 +102,7 @@
 
             <!-- list creation section asks users for the name of their list and gives them the option to add games to their list -->
             <div class = "float_left">
-                <h2>Create a List</h2>
+                <h2>Create Game Lists</h2>
                 <form action = "lists.html">
                     <p>
                         Enter list name

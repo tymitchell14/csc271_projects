@@ -48,11 +48,11 @@ hr {
 
 /*untouched links are blue, visited links are purple, and hovered over links are light blue*/
 a:link {
-    color:rgb(76, 207, 255);
+    color:white;
 }
 
 a:visited {
-    color:rgb(198, 143, 250);
+    color: rgb(76, 207, 255);
 }
 
 
@@ -130,15 +130,16 @@ input.submit_button {
 
 /*hovering over links makes the font size bigger*/
 a:hover {
-    font-size:105%;
     color:aqua;
 }
 
 /*active links have a white background with a red text color*/
 a:active {
-    font-size:105%;
-    color:red;
-    background-color:white;
+    padding: 8px;
+    border-width:10px;
+    border-radius:2px;
+    background-color: white;
+    color:purple;
 }
 
 /*styles content to have a smaller width and center in the middle of the screen*/
@@ -204,6 +205,13 @@ img.border {
     clear:both;
 }
 
+.active {
+    padding: 8px;
+    border-width:10px;
+    border-radius:2px;
+    background-color:#2f2b2b;
+}
+
 
 /*rules for screens 1600px and under*/
 @media only screen and (max-width:1300px) {
@@ -241,7 +249,7 @@ img.border {
     /*set content width to make and increase font to make it more readable*/
     .content {
         width: 100%;
-        font-size: 40px;
+        font-size: 150%;
     }
 
     /*make images scale to the smaller screen size*/

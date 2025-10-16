@@ -10,9 +10,35 @@
          https://www.w3.org/International/questions/qa-html-encoding-declarations-->
         <meta charset = "utf-8">
 
-        <title> RateGames </title>
+        <title> RateGames | Game Review Site </title>
         <link href = "css/rategames.css" type = "text/css" rel = "stylesheet">
 
+        <!--open graph tags-->
+        <meta property = "og:title" content = "RateGames">
+        <meta property = "og:description" content = "RateGames is a website where users can review games
+        to share their passion for gaming with others">
+        <meta property = "og:image" content = "images/Mitchell_Logo.png">
+        <meta property = "og:url" content = "https://tymitchell.rhody.dev/csc271_projects/product_site/homepage.html">
+
+
+        <!--descriptions and keywords-->
+        <meta name = "description"
+            content = "Homepage for game review site called RateGames. This page contains a description of the site
+            features such as writing game reviews and creating lists of video games. Also contains a sections where users
+            can review the current top rated games.">
+        <meta name = "keywords"
+            content = "game reviews, game review site, top rated games, video game, homepage">
+
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V9G1RGCR8Z"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-V9G1RGCR8Z');
+        </script>
     </head>
 
 
@@ -23,13 +49,14 @@
             <div class = "header">
 
                 <!-- logo image linked -->
-                <img class = "header_logo" src = "images/Mitchell_Logo.png" alt = "logo" width = "80" height = "80" id = "float_img">
+                <img src = "images/Mitchell_Logo.png" alt = "black and blue logo with a controller in the center and the words 'RateGames' 
+                written in white text" width = "80" height = "80" id = "float_img">
 
                 <div class = "header_links">
 
                     <!-- navigation bar which will contain the links that go to different pages on the website, the logo links to the homepage -->
                     <h3>
-                        <a href = "homepage.html">Homepage</a>&emsp;
+                        <a href = "homepage.html" class = "active">Homepage</a>&emsp;
                         <a href = "reviews.html">Reviews</a>&emsp;
                         <a href = "lists.html">Lists</a>&emsp;
                         About Us&emsp;
@@ -50,9 +77,9 @@
 
             <!-- paragraph providing users with a description of what the website is about -->
             <p>
-                <strong>RateGames</strong> is an all in one place where you can <em>rate</em> and <em>write</em> reviews for video games.
+                <strong>RateGames</strong> is a game review site where you can <em>rate</em> and <em>write</em> reviews for video games.
                 You can have all of your reviews here no matter what platform you played it on. Look at 
-                reviews of others to see their opinions or get reccomendations for your backlog. Create 
+                reviews of others to see their opinions on popular games or get reccomendations for your backlog. Create 
                 lists of your favorite games to let others know what you enjoy. <strong>RateGames</strong> is the best
                 platform to review and catalog the games you love.
                 
@@ -70,7 +97,7 @@
                     <li>Create lists of your favorite games or games that you think belong together</li>
                     <li>View reviews of others and like on the ones you enjoyed.</li>
                     <li>View lists of others to get ideas on what games to add to your backlog</li>
-                    <li>Look at your profile to see the catalog of games you've played and reviewed.</li>
+                    <li>Look at your profile to see the catalog of game reviews.</li>
 
                 </ul>
 
@@ -98,44 +125,47 @@
 
             <!-- example list showing users what the current top reviewed games are-->
             <!-- all screenshots come were taking using the Steam screenshot function on my own personal copies of the games-->
-                <h2>Top Reviewed Games</h2>
-
-                <ul>
-                    <div class = float_left>
+                <h2>Top Rated Games</h2>
+                <div class = float_left>
+                    <ul>
                         <li>
                             <strong><em>Hollow Knight: Silksong</em></strong> <br>
-                            <img class = "border" src = "images/silksong.jpg" alt = "character in a red cloak standing next to a gold cage while inside a mossy cave"
+                            <img class = "border" src = "images/silksong.jpg" alt = "video game character in a red cloak standing next to a gold cage while inside a mossy cave"
                             width = "480" height = "270">
                         </li>
                     
                         <li>
                             <strong><em>Elden Ring Nightreign</em></strong> <br>
-                            <img class = "border" src = "images/nightreign.jpg" alt = "character in armor riding on a bird towards a snowy mountain"
+                            <img class = "border" src = "images/nightreign.jpg" alt = "video game character in armor riding on a bird towards a snowy mountain"
                             width = "480" height = "270">
                         </li>
                     
 
                         <li>
                             <strong><em>Monster Hunter Wilds</em></strong> <br>
-                            <img class = "border" src = "images/wilds.jpg" alt = "character with a sword on her back standing in front of a desert plain"
+                            <img class = "border" src = "images/wilds.jpg" alt = "video game character with a sword on her back standing in front of a desert plain"
                             width = "480" height = "270"> 
                         </li>
-                    </div>
+                    </ul>
+                </div>
 
-                    <div class = "float_right">
+                <div class = "float_right">
+                    <ul>
+
                         <li>
                             <strong><em>Celeste</em></strong> <br>
-                            <img class = "border" src = "images/celeste.jpg" alt = "character with red hair and backpack standing in front of a memorial in a ruined city"
+                            <img class = "border" src = "images/celeste.jpg" alt = "video game character with red hair and backpack standing in front of a memorial in a ruined city"
                             width = "480" height = "270"> 
                         </li>
 
                         <li>
                             <strong><em>Terraria</em></strong> <br>
-                            <img class = "border" src = "images/terraria.jpg" alt = "pixelated character standing in a forest"
+                            <img class = "border" src = "images/terraria.jpg" alt = "video game character standing in a forest"
                             width = "480" height = "270"> 
                         </li>
-                    </div>
-                </ul>
+
+                    </ul>
+                </div>
         
 
             

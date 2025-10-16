@@ -7,13 +7,40 @@
 <html lang = "en">
     <!-- head contains the title for the webpage as displayed in the browser tab-->
     <head>
-        <title>RateGames | Lists</title>
+        <title>RateGames | Compilations of Your Top Games</title>
         <link href = "css/rategames.css" type = "text/css" rel = "stylesheet">
 
          <!-- character encoding error solved using this guide from W3: 
          https://www.w3.org/International/questions/qa-html-encoding-declarations-->
 
         <meta charset = "utf-8">
+    
+        <!--descriptions and keywords-->
+
+        <meta name = "description"
+            content = "The lists page allows user to create game lists, which are compilations of games based on a specific theme.
+            Users can also share lists of their top games with others">
+        <meta name = "keywords"
+            content = "create game lists, compilations, top games, lists">
+
+         <!--open graph tags-->
+        <meta property = "og:title" content = "RateGames">
+        <meta property = "og:description" content = "RateGames is a website where users can review games
+        to share their passion for gaming with others">
+        <meta property = "og:image" content = "images/Mitchell_Logo.png">
+        <meta property = "og:url" content = "https://tymitchell.rhody.dev/csc271_projects/product_site/homepage.html">
+
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V9G1RGCR8Z"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-V9G1RGCR8Z');
+        </script>
+
     </head>
 
     <body>
@@ -22,7 +49,8 @@
             <div class = "header">
 
                 <!-- logo image linked -->
-                <img src = "images/Mitchell_Logo.png" alt = "logo" width = "80" height = "80" id = "float_img">
+                <img src = "images/Mitchell_Logo.png" alt = "black and blue logo with a controller in the center and the words 'RateGames' 
+                written in white text" width = "80" height = "80" id = "float_img">
 
                 <div class = "header_links">
 
@@ -30,7 +58,7 @@
                     <h3>
                         <a href = "homepage.html">Homepage</a>&emsp;
                         <a href = "reviews.html">Reviews</a>&emsp;
-                        <a href = "lists.html">Lists</a>&emsp;
+                        <a href = "lists.html" class = "active">Lists</a>&emsp;
                         About Us&emsp;
                         FAQ&emsp;
                         Profile
@@ -47,8 +75,9 @@
             <h1>Lists</h1>
 
             <p>
-                This is the lists page where you search up lists of great games created by other users. You can also search up
-                individual games to create and compile your own lists of games based on whatever theme you would like.
+                On the lists page you can look at compilations of great games created by other users. You can also search up
+                individual games to create game lists based on whatever theme you would like. For example, you might want to create a list
+                of the top games you've played this year.
             </p>
 
             <br> <hr>
@@ -59,12 +88,14 @@
             <form action = "lists.html">
                 <div class = "float_left">
                     <p>Enter list name
-                        <input class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" required>
+                        <input class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" required
+                        label = "text prompt to enter in the name of the list you would like to search up">
                     </p>
                 </div>
                 <div class = "float_right">
                     <p>
-                        <input class = "submit_button" type = "submit" value = "Submit">
+                        <input class = "submit_button" type = "submit" value = "Submit" 
+                        label = "button to confirm your list search given what you entered for the list name">
                     </p>
                 </div>
             </form>
@@ -74,26 +105,57 @@
 
             <!-- list creation section asks users for the name of their list and gives them the option to add games to their list -->
             <div class = "float_left">
-                <h2>Create a List</h2>
+                <h2>Create Game Lists</h2>
                 <form action = "lists.html">
                     <p>
                         Enter list name
-                        <input class = "grey_background" type = "text" name = "list_name" size = "60" maxlength = "60" required>
+                        <input class = "grey_background" type = "text" name = "list_name" size = "60" maxlength = "60" required
+                        label = "enter in the name of the list you would like to create">
                     </p>
                     <h3>Add games to your list</h3>
                     <ul>
-                        <li> <input class = "grey_background" type = "text" name = "list_item1" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item2" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item3" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item4" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item5" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item6" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item7" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item8" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item9" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item10" size = "45" maxlength = "60"> </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item1" size = "45" maxlength = "60"
+                            label = "entry for game 1"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item2" size = "45" maxlength = "60"
+                            label = "entry for game 2"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item3" size = "45" maxlength = "60"
+                            label = "entry for game 3"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item4" size = "45" maxlength = "60"
+                            label = "entry for game 4"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item5" size = "45" maxlength = "60"
+                            label = "entry for game 5"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item6" size = "45" maxlength = "60"
+                            label = "entry for game 6"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item7" size = "45" maxlength = "60"
+                            label = "entry for game 7"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item8" size = "45" maxlength = "60"
+                            label = "entry for game 8"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item9" size = "45" maxlength = "60"
+                            labell = "entry for game 9"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item10" size = "45" maxlength = "60"
+                            label = "entry for game 10"> 
+                        </li>
                     </ul>
-                    <input class = "submit_button" type = "submit" value = "Create List">
+                    <input class = "submit_button" type = "submit" value = "Create List" label = "button to create list">
                 </form>
             </div>
 

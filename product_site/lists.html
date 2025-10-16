@@ -87,15 +87,15 @@
             <h2>Search</h2>
             <form action = "lists.html">
                 <div class = "float_left">
-                    <p>Enter list name
-                        <input class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" required
-                        label = "text prompt to enter in the name of the list you would like to search up">
+                    <p>
+                        <label for = "search_list">Enter List Name</label>
+                        <input id ="search_list" class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" required>
                     </p>
                 </div>
                 <div class = "float_right">
                     <p>
-                        <input class = "submit_button" type = "submit" value = "Submit" 
-                        label = "button to confirm your list search given what you entered for the list name">
+                        <input id = "list_search_submit" class = "submit_button" type = "submit" value = "Submit">
+                        <label class = "hide" for = "list_search_submit">Submit List Search</label>
                     </p>
                 </div>
             </form>

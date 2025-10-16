@@ -49,13 +49,14 @@
             <div class = "header">
 
                 <!-- logo image linked -->
-                <img class = "header_logo" src = "images/Mitchell_Logo.png" alt = "logo" width = "80" height = "80" id = "float_img">
+                <img src = "images/Mitchell_Logo.png" alt = "black and blue logo with a controller in the center and the words 'RateGames' 
+                written in white text" width = "80" height = "80" id = "float_img">
 
                 <div class = "header_links">
 
                     <!-- navigation bar which will contain the links that go to different pages on the website, the logo links to the homepage -->
                     <h3>
-                        <a href = "homepage.html">Homepage</a>&emsp;
+                        <a href = "homepage.html" class = "active">Homepage</a>&emsp;
                         <a href = "reviews.html">Reviews</a>&emsp;
                         <a href = "lists.html">Lists</a>&emsp;
                         About Us&emsp;
@@ -125,9 +126,8 @@
             <!-- example list showing users what the current top reviewed games are-->
             <!-- all screenshots come were taking using the Steam screenshot function on my own personal copies of the games-->
                 <h2>Top Rated Games</h2>
-
-                <ul>
-                    <div class = float_left>
+                <div class = float_left>
+                    <ul>
                         <li>
                             <strong><em>Hollow Knight: Silksong</em></strong> <br>
                             <img class = "border" src = "images/silksong.jpg" alt = "video game character in a red cloak standing next to a gold cage while inside a mossy cave"
@@ -146,9 +146,12 @@
                             <img class = "border" src = "images/wilds.jpg" alt = "video game character with a sword on her back standing in front of a desert plain"
                             width = "480" height = "270"> 
                         </li>
-                    </div>
+                    </ul>
+                </div>
 
-                    <div class = "float_right">
+                <div class = "float_right">
+                    <ul>
+
                         <li>
                             <strong><em>Celeste</em></strong> <br>
                             <img class = "border" src = "images/celeste.jpg" alt = "video game character with red hair and backpack standing in front of a memorial in a ruined city"
@@ -160,8 +163,9 @@
                             <img class = "border" src = "images/terraria.jpg" alt = "video game character standing in a forest"
                             width = "480" height = "270"> 
                         </li>
-                    </div>
-                </ul>
+
+                    </ul>
+                </div>
         
 
             

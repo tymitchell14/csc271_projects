@@ -49,7 +49,8 @@
             <div class = "header">
 
                 <!-- logo image linked -->
-                <img src = "images/Mitchell_Logo.png" alt = "logo" width = "80" height = "80" id = "float_img">
+                <img src = "images/Mitchell_Logo.png" alt = "black and blue logo with a controller in the center and the words 'RateGames' 
+                written in white text" width = "80" height = "80" id = "float_img">
 
                 <div class = "header_links">
 
@@ -57,7 +58,7 @@
                     <h3>
                         <a href = "homepage.html">Homepage</a>&emsp;
                         <a href = "reviews.html">Reviews</a>&emsp;
-                        <a href = "lists.html">Lists</a>&emsp;
+                        <a href = "lists.html" class = "active">Lists</a>&emsp;
                         About Us&emsp;
                         FAQ&emsp;
                         Profile
@@ -87,12 +88,14 @@
             <form action = "lists.html">
                 <div class = "float_left">
                     <p>Enter list name
-                        <input class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" required>
+                        <input class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" required
+                        label = "text prompt to enter in the name of the list you would like to search up">
                     </p>
                 </div>
                 <div class = "float_right">
                     <p>
-                        <input class = "submit_button" type = "submit" value = "Submit">
+                        <input class = "submit_button" type = "submit" value = "Submit" 
+                        label = "button to confirm your list search given what you entered for the list name">
                     </p>
                 </div>
             </form>
@@ -106,22 +109,53 @@
                 <form action = "lists.html">
                     <p>
                         Enter list name
-                        <input class = "grey_background" type = "text" name = "list_name" size = "60" maxlength = "60" required>
+                        <input class = "grey_background" type = "text" name = "list_name" size = "60" maxlength = "60" required
+                        label = "enter in the name of the list you would like to create">
                     </p>
                     <h3>Add games to your list</h3>
                     <ul>
-                        <li> <input class = "grey_background" type = "text" name = "list_item1" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item2" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item3" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item4" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item5" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item6" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item7" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item8" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item9" size = "45" maxlength = "60"> </li>
-                        <li> <input class = "grey_background" type = "text" name = "list_item10" size = "45" maxlength = "60"> </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item1" size = "45" maxlength = "60"
+                            label = "entry for game 1"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item2" size = "45" maxlength = "60"
+                            label = "entry for game 2"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item3" size = "45" maxlength = "60"
+                            label = "entry for game 3"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item4" size = "45" maxlength = "60"
+                            label = "entry for game 4"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item5" size = "45" maxlength = "60"
+                            label = "entry for game 5"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item6" size = "45" maxlength = "60"
+                            label = "entry for game 6"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item7" size = "45" maxlength = "60"
+                            label = "entry for game 7"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item8" size = "45" maxlength = "60"
+                            label = "entry for game 8"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item9" size = "45" maxlength = "60"
+                            labell = "entry for game 9"> 
+                        </li>
+                        <li> 
+                            <input class = "grey_background" type = "text" name = "list_item10" size = "45" maxlength = "60"
+                            label = "entry for game 10"> 
+                        </li>
                     </ul>
-                    <input class = "submit_button" type = "submit" value = "Create List">
+                    <input class = "submit_button" type = "submit" value = "Create List" label = "button to create list">
                 </form>
             </div>
 

@@ -46,14 +46,15 @@
             <div class = "header">
 
                 <!-- logo image linked -->
-                <img src = "images/Mitchell_Logo.png" alt = "logo" width = "80" height = "80" id = "float_img">
+                <img src = "images/Mitchell_Logo.png" alt = "black and blue logo with a controller in the center and the words 'RateGames' 
+                written in white text" width = "80" height = "80" id = "float_img">
 
                 <div class = "header_links">
 
                     <!-- navigation bar which will contain the links that go to different pages on the website, the logo links to the homepage -->
                     <h3>
                         <a href = "homepage.html">Homepage</a>&emsp;
-                        <a href = "reviews.html">Reviews</a>&emsp;
+                        <a href = "reviews.html" class = "active">Reviews</a>&emsp;
                         <a href = "lists.html">Lists</a>&emsp;
                         About Us&emsp;
                         FAQ&emsp;
@@ -89,28 +90,39 @@
                 <form action = "reviews.html">
                     <div class = "float_left">
                         <p>Enter game name
-                            <input class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" required> <br>
-                            <input type = "checkbox" name = "genre" value = "action-adventure">
+                            <input class = "grey_background" type = "text" name = "prompt" size = "60" maxlength = "60" 
+                            label = "enter text containing game name to search up the video game for review" required> <br>
+
+                            <input type = "checkbox" name = "genre" value = "action-adventure" 
+                            label = "filter search by Action-Adventure hames">
                             Action-Adventure
-                            <input type = "checkbox" name = "genre" value = "rpg">
+
+                            <input type = "checkbox" name = "genre" value = "rpg" label = "filter search by rpg games">
                             RPG
-                            <input type = "checkbox" name = "genre" value = "horror">
+
+                            <input type = "checkbox" name = "genre" value = "horror" label = "filter search by horror games">
                             Horror
-                            <input type = "checkbox" name = "genre" value = "platformer">
+
+                            <input type = "checkbox" name = "genre" value = "platformer" label = "filter search by platformer games">
                             Platformer
-                            <input type = "checkbox" name = "genre" value = "strategy">
+
+                            <input type = "checkbox" name = "genre" value = "strategy" label = "filter search by strategy games">
                             Strategy
-                            <input type = "checkbox" name = "genre" value = "first-person">
+
+                            <input type = "checkbox" name = "genre" value = "first-person" label = "filter search by first-person games">
                             First-Person
-                            <input type = "checkbox" name = "genre" value = "sports">
+
+                            <input type = "checkbox" name = "genre" value = "sports" label = "filter search by sports games">
                             Sports
-                            <input type = "checkbox" name = "genre" value = "fighting">
+
+                            <input type = "checkbox" name = "genre" value = "fighting" label = "filter search by fighting games">
                             Fighting 
                         </p>
                     </div>
                     <div class = "float_right">
                         <p>
-                            <input class = "submit_button" type = "submit" value = "Submit">
+                            <input class = "submit_button" type = "submit" value = "Submit" 
+                            label = "submit button to confirm search given your text input and filters">
                         </p>
                     </div>
                 </form>
@@ -124,19 +136,21 @@
                         [Selected Game]<br>
                         Rate from 1 to 5 stars <br>
 
-                        <input type = "radio" name = "rating" value = "one" required> 1
-                        <input type = "radio" name = "rating" value = "two" required> 2
-                        <input type = "radio" name = "rating" value = "three" required> 3
-                        <input type = "radio" name = "rating" value = "four" required> 4
-                        <input type = "radio" name = "rating" value = "five" required> 5
+                        <input type = "radio" name = "rating" value = "one" required label = "give game a 1/5"> 1
+                        <input type = "radio" name = "rating" value = "two" required label = "give game a 2/5"> 2
+                        <input type = "radio" name = "rating" value = "three" required label = "give game a 3/5"> 3
+                        <input type = "radio" name = "rating" value = "four" required label = "give game a 4/5"> 4
+                        <input type = "radio" name = "rating" value = "five" required label = "give game a 5/5"> 5
 
                         <br>
 
                         Enter in a comment <br>
-                        <textarea id = "comment" name = "comments" rows = "20" cols = "100"> </textarea>
+                        <textarea id = "comment" name = "comments" rows = "20" cols = "100" 
+                        label = "text area to enter in the text you would like to write in your review"> </textarea>
 
                         <br>
-                        <input class = "submit_button" type = "submit" value = "Select Game">
+                        <input class = "submit_button" type = "submit" value = "Post Review"
+                        label = "press button to post review for others to see">
                     </p>
                 </form>
 

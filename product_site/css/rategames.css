@@ -49,10 +49,12 @@ hr {
 /*untouched links are blue, visited links are purple, and hovered over links are light blue*/
 a:link {
     color:white;
+    padding: 8px;
 }
 
 a:visited {
     color: rgb(76, 207, 255);
+    padding:8px;
 }
 
 
@@ -130,6 +132,7 @@ input.submit_button {
 
 /*hovering over links makes the font size bigger*/
 a:hover {
+    padding:8px;
     color:aqua;
 }
 
@@ -210,6 +213,21 @@ img.border {
     border-width:10px;
     border-radius:2px;
     background-color:#2f2b2b;
+}
+
+label {
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.hide {
+    border: 0;
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    width:1px;
 }
 
 

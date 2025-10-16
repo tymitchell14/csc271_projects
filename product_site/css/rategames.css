@@ -215,11 +215,6 @@ img.border {
     background-color:#2f2b2b;
 }
 
-label {
-    color:white;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
 .hide {
     border: 0;
     height:1px;

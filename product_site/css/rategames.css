@@ -23,6 +23,12 @@ ul {
     color:azure; 
 }
 
+ol {
+    font-family:Arial, Helvetica, sans-serif;
+    color:azure; 
+
+}
+
 /*tables have a light grey background*/
 table {
     font-family:Arial, Helvetica, sans-serif;
@@ -70,6 +76,22 @@ h2 {
 }
 
 h3 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+
+h4 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+
+h5 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+}
+
+
+h6 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:white;
 }
@@ -223,6 +245,21 @@ img.border {
     padding:0;
     position:absolute;
     width:1px;
+}
+
+.top_user {
+    color:gold;
+    font-size:130%;
+}
+
+.second_place {
+    color:silver;
+    font-size:120%;
+}
+
+.third_place {
+    color: #CE8946;
+    font-size:110%;
 }
 
 

@@ -9,7 +9,7 @@ var review3 = ["angrytoaster", "1/5", "Donkey Kong Bananza", "Thought it was bor
 var review4 = ["mrtaco", "5/5", "Mario Kart World", "Feels great to play!", "512"];
 var review5 = ["emily42", "2/5", "Monster Hunter Wilds", "Bad performance issues", "678"];
 
-//generate random number between 0 and 4
+//generate random number between 0 and 5
 var rand1 = Math.floor(Math.random() * 6);
 var randomReview;
 
@@ -17,6 +17,7 @@ var randomReview;
 if(rand1 === 0) {
     randomReview = review1;
 }
+//review with most likes is weighted higher
 else if(rand1 === 1 || rand1 === 2) {
     randomReview = review2;
 }
@@ -48,11 +49,12 @@ var list3 = ["angrytoaster", "Top 100 Must Plays", "5428"];
 var list4 = ["mrtaco", "Top 15 Hardest Games", "1687"];
 var list5 = ["emily42", "Games With Great Gameplay", "904"];
 
-//generate random number between 0 and 4
+//generate random number between 0 and 5
 var rand2 = Math.floor(Math.random() * 6);
 var randomList;
 
 //each random number corresponds to a different list
+//list with most likes is weighted higher
 if(rand2 === 0 || rand2 === 1) {
     randomList = list1;
 }

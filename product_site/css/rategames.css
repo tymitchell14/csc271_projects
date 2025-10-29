@@ -287,7 +287,6 @@ img.border {
 
 /*rules for screens 1600px and under*/
 @media only screen and (max-width:1300px) {
-
     .content_right {
         float: none;
         width:100%;
@@ -306,8 +305,9 @@ img.border {
     .float_left {
         float:none;
     }
- 
- 
+    .featured {
+        float:none;
+    }
 }
 
 /*rules for screen sizes under 600*/
@@ -333,17 +333,17 @@ img.border {
         float: none;
         width:100%;
     }
-
     .content_right {
         float: none;
         width:100%;
     }
-
     .float_left {
         float:none;
     }
-
     .float_right {
+        float:none;
+    }
+    .featured {
         float:none;
     }
 

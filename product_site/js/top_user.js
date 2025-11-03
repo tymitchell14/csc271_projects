@@ -2,13 +2,17 @@
 //10/26/2025
 //This is a script that displays the top 5 users of the website on the homepage
 
+//changes header name
+function header() {
+    var username_doc = document.getElementById("top_username");
+    username_doc.textContent = ("Top 5 Users");
+}
+
 var userList = ["smileycookie", "john28", "angrytoaster", "mrtaco", "emily42"];
 var reviewLikesList = [759, 1000, 427, 512, 678];
 var listLikesList = [65489, 57894, 5438, 1687, 904];
 
-//use getElementById to change the header title top Top 5 Users
-var username_doc = document.getElementById("top_username");
-username_doc.textContent = ("Top 5 Users");
+header();
 
 //user a query selector to display the site's top user in the correct spot
 //store the username and add the listlikes and reviewlikes to display them

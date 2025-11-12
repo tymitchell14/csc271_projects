@@ -86,7 +86,7 @@
 
                 <!-- form where users can enter in a text prompt and filter by genres to search up a game they would like to review-->
 
-                <h2 class = "search_header">Search and Review</h2>
+                <h2 class = "search_header">Search</h2>
                 <form action = "reviews.html">
                     <div class = "float_left">
                         <p>
@@ -128,48 +128,76 @@
                     </div>
                 </form>
 
-                <br> <br> <br> <br> <br>
+                <br> <br> <br> <br> <br> <hr>
 
                 <!-- Form where users can enter in a rating and review comment for the game they selected with the search function-->
 
-                <form action = "reviews.html">
-                    <p>
-                        [Selected Game] <br>
-                        Rate from 1 to 5 stars <br>
+                <div class = "float_left">
+                
+                <h2>Write Review</h2>
 
-                        <input id = "1/5" type = "radio" name = "rating" value = "one" required>
+                <form id = "review_form" action = "reviews.html">
+
+                    <label for = "gamename">Enter game name</label>
+                    <input class = "grey_background" id = "gamename" type = "text" name = "review_game_name" size = "45" maxlength = "45" required> 
+                    <p id = "inputinfo"></p>
+
+
+                    <p>
+                        
+                        Rate from 1 to 5 stars:&emsp;
+
+                        <input class = "radioRating" id = "1/5" type = "radio" name = "rating" value = "1" required>
                         <label for = "1/5">1</label> 
                         
-                        <input id = "2/5" type = "radio" name = "rating" value = "two" required> 
+                        <input class = "radioRating" id = "2/5" type = "radio" name = "rating" value = "2" required> 
                         <label for = "2/5">2</label>
 
-                        <input id = "3/5" type = "radio" name = "rating" value = "three" required> 
+                        <input class = "radioRating" id = "3/5" type = "radio" name = "rating" value = "3" required> 
                         <label for = "3/5">3</label>
 
-                        <input id = "4/5" type = "radio" name = "rating" value = "four" required> 
+                        <input class = "radioRating" id = "4/5" type = "radio" name = "rating" value = "4" required> 
                         <label for = "4/5">4</label>
 
-                        <input id = "5/5" type = "radio" name = "rating" value = "five" required> 
+                        <input class = "radioRating" id = "5/5" type = "radio" name = "rating" value = "5" required> 
                         <label for = "5/5">5</label>
 
-                        <br>
+                        <br> <br>
 
-                        <br>
-                        <label for = "comment">Write text review:</label>
-                        <br>
-                        <textarea id = "comment" name = "comments" rows = "20" cols = "100" > </textarea>
+                        <label for = "comment">Write text review:</label> <br>
+                        <textarea id = "comment" name = "comments" rows = "20" cols = "65" > </textarea> <br>
 
-                        <br>
+                        <label class = "hide" for = "review-preview">Preview Review</label>
+                        <input id = "review-preview" class = "submit_button" type = "button" value = "Preview Review">
+
                         <label class = "hide" for = "review-submit">Post Review</label>
                         <input id = "review-submit" class = "submit_button" type = "submit" value = "Post Review">
+
                     </p>
                 </form>
 
-                <!-- table listing the current most popular reviews -->
+                <p id = "submissionMessage"></p>
 
-                <br> <hr>
+                </div>
+
+
+                <div class = "previewCard">
+                    <h2>Preview Review</h2>
+                    <div class = "reviewPreview">
+                        <p>YourUserName</p>
+                        <p id = "reviewName"></p>
+                        <p class = "star" id = "reviewRating"></p>
+                        <p class = "commentPreview" id = "reviewComment"></p>
+                    </div>
+                </div>
+
+            
+
+
+                <br class = "clear"> <hr>
             </div>
 
+            <!-- table listing the current most popular reviews -->
 
             <div class = float_left>
 
@@ -216,7 +244,70 @@
                         <td>2/5</td>
                         <td>Monster Hunter Wilds&emsp;</td>
                         <td>Bad performance issues</td>
-                        <td>678</td>
+                        <td>478</td>
+                    </tr>
+                     <tr>
+                        <td>rocketman</td>
+                        <td>3/5</td>
+                        <td>Cyberpunk 2077&emsp;</td>
+                        <td>The game was rushed!</td>
+                        <td>465</td>
+                    </tr>
+                     <tr>
+                        <td>_cabbage_8</td>
+                        <td>4/5</td>
+                        <td>Enter The Gungeon&emsp;</td>
+                        <td>One of my favorite rogeulikes.</td>
+                        <td>432</td>
+                    </tr>
+                     <tr>
+                        <td>the_guy</td>
+                        <td>5/5</td>
+                        <td>Elden Ring&emsp;</td>
+                        <td>Best open world game I've played.</td>
+                        <td>418</td>
+                    </tr>
+                     <tr>
+                        <td>HADES_FAN</td>
+                        <td>5/5</td>
+                        <td>Hades 2&emsp;</td>
+                        <td>Even better than the first</td>
+                        <td>392</td>
+                    </tr>
+                     <tr>
+                        <td>cycle9</td>
+                        <td>3/5</td>
+                        <td>Sekiro&emsp;</td>
+                        <td>A little too hard for my taste.</td>
+                        <td>354</td>
+                    </tr>
+                     <tr>
+                        <td>gamefan10</td>
+                        <td>2/5</td>
+                        <td>Borderlands 4&emsp;</td>
+                        <td>Great game but terrible performance</td>
+                        <td>328</td>
+                    </tr>
+                     <tr>
+                        <td>10pj97</td>
+                        <td>4/5</td>
+                        <td>Dark Souls 2&emsp;</td>
+                        <td>Great but frustrating</td>
+                        <td>314</td>
+                    </tr>
+                     <tr>
+                        <td>meet_boy</td>
+                        <td>5/5</td>
+                        <td>Nine Sols&emsp;</td>
+                        <td>Amazing combat and bosses!</td>
+                        <td>289</td>
+                    </tr>
+                     <tr>
+                        <td>heythere</td>
+                        <td>3/5</td>
+                        <td>Elden Ring Nightreign&emsp;</td>
+                        <td>Needs more randomization.</td>
+                        <td>257</td>
                     </tr>
                 </table>
             </div>
@@ -253,6 +344,8 @@
             </div>
 
         </div>
+
+        <script src = "js/review_display.js"></script>
 
     </body>
 

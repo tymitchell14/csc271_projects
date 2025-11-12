@@ -14,6 +14,11 @@ p {
     color:azure;
 }
 
+label {
+    font-family:Arial, Helvetica, sans-serif;
+    color:azure;
+}
+
 li {
     padding-bottom: 10px;
 }
@@ -290,6 +295,51 @@ img.featured_border {
     float:left;
     margin: 25px;
     width:300px;
+}
+
+.previewCard {
+    float:left;
+    margin-left: 60px;
+}
+
+.reviewPreview {
+    font-size: 150%;
+    width: 440px;
+    height: 430px;
+    padding: 20px;
+
+    border-style:solid;
+    border-radius:1px;
+    border-width:5px;
+    border-color:black;
+}
+
+.section {
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.radioRating {
+    margin-right: 5px;
+}
+
+.warning {
+    color:yellow;
+}
+
+.error {
+    color:red;
+}
+
+.star {
+    color:gold;
+}
+.commentPreview {
+    padding:10px;
+    width:420px;
+    height: 200px;
+    margin:auto;
+    background-color:#403a3a;
 }
 
 /*rules for screens 1600px and under*/

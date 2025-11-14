@@ -42,6 +42,7 @@ function displayInputInfo() {
 
 }
 
+//displays an error message if character limit is greater than 40
 function checkInput() {
     var nameInput = document.getElementById("gamename");
     var info = document.getElementById("inputinfo");
@@ -50,6 +51,7 @@ function checkInput() {
         info.textContent = "ERROR: The name should be no larger than 40 characters"
         info.setAttribute("class", "error");
     }
+    //if character limit is not exceeded, clear the message displayed by displayInputInfo()
     else {
         info.textContent = "";
     }
@@ -57,6 +59,7 @@ function checkInput() {
 
 }
 
+//when the review form is submitted, prevent the default behavior and output a message telling the user their review has been posted
 function submitMessage() {
     event.preventDefault();
     var message = document.getElementById("submissionMessage");
@@ -64,14 +67,18 @@ function submitMessage() {
 
 }
 
-
+//add an event listener for the review preview when the preview button is clicked
 var previewButton = document.getElementById("review-preview");
 previewButton.addEventListener('click', displayReview, false);
 
 var nameInput = document.getElementById("gamename");
+//add an event listener that displays character limit when users click on the game name textbox
 nameInput.addEventListener('focus', displayInputInfo, false);
+
+//add an event listener that displays an error message when character limit for game name is exceeded
 nameInput.addEventListener('blur', checkInput, false);
 
+//add an event listener to the post review form submit letting the user know their review has been posted
 var form = document.getElementById("review_form");
 form.addEventListener('submit', submitMessage, false);
 

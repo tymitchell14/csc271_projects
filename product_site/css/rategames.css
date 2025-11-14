@@ -437,4 +437,7 @@
         .reviewTable {
             float:none;
         }
+        .reviewPreview {
+            height: 600px;
+        }
     }

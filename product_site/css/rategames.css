@@ -3,357 +3,438 @@
 /* This page is the style sheet for the RateGames website */
 
 
-/*sets background color to a dark grey*/
-body {
-    background-color: #2f2b2b;
-}
-
-/*general font is set to Arial with a white color*/
-p {
-    font-family:Arial, Helvetica, sans-serif;
-    color:azure;
-}
-
-li {
-    padding-bottom: 10px;
-}
-
-ul {
-    font-family:Arial, Helvetica, sans-serif;
-    color:azure; 
-}
-
-ol {
-    font-family:Arial, Helvetica, sans-serif;
-    color:azure; 
-
-}
-
-/*tables have a light grey background*/
-table {
-    font-family:Arial, Helvetica, sans-serif;
-    color:azure;
-    background-color:#403a3a;
-}
-
-/*puts a border on cells in a table*/
-td, th {
-    text-align:center;
-    border-style:solid;
-    border-width: 2px;
-    border-color:black;
-    padding-top: 20px;
-    padding-bottom:20px;
-}
-
-/*all horizontal rules are colored blue to break up sections*/
-hr {
-    border-width: 6px;
-    border-color:rgb(71, 71, 241);
-}
-
-/*untouched links are blue, visited links are purple, and hovered over links are light blue*/
-a:link {
-    color:white;
-    padding: 8px;
-}
-
-a:visited {
-    color: rgb(76, 207, 255);
-    padding:8px;
-}
-
-
-/*All headers are set to the Gill Sans font and colored white*/
-h1 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
-}
-
-h2 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
-}
-
-h3 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
-}
-
-h4 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
-}
-
-h5 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
-}
-
-
-h6 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
-}
-
-
-/*grey_background class gives text input fields a grey background and increases the font size*/
-input.grey_background {
-    background-color:#403a3a;
-    border-width: 4px;
-    border-color:black;
-    border-radius: 4px;
-    font-size: medium;
-    color: white;
-}
-
-/*submit_button class gives form submission buttons grey with a black border*/
-input.submit_button {
-    background-color:#2f2b2b;
-    color: azure;
-    border-width: 8px;
-    border-radius: 8px;
-    border-color:black;
-    font-size:large;
-}
-
-/*comment id is meant to give the review comment text area a grey background and icnreased font size*/
-#comment {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color:#403a3a;
-    border-width:4px;
-    border-radius:4px;
-    font-size: medium;
-    color: white;
-    border-color:black;
-}
-
-/*header class sets overflow property, background color, and adds padding*/
-.header {
-    overflow: hidden;
-    background-color:blue;
-    padding: 10px;
-}
-
-.header_logo {
-    border-width:4px;
-    border-radius:4px;
-    border-color:black;
-    float:left;
-}
-
-/*header links class floats the links to the right, changes text style, and adds padding*/
-.header_links {
-    float:right;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
-    font-size: large;
-    padding:5px;
-}
-
-/*hovering over links makes the font size bigger*/
-a:hover {
-    padding:8px;
-    color:aqua;
-}
-
-/*active links have a white background with a red text color*/
-a:active {
-    padding: 8px;
-    border-width:10px;
-    border-radius:2px;
-    background-color: white;
-    color:purple;
-}
-
-/*styles content to have a smaller width and center in the middle of the screen*/
-.content {
-    width:75%;
-    background-color:#2f2b2b;
-    padding:10px;
-    margin: auto;
-}
-
-
-/*clears float*/
-.clear {
-    clear:both;
-}
-
-/*classes to float img left, right, center*/
-.float_left {
-    float:left;
-}
-
-.float_right {
-    float:right;
-}
-
-.content_left {
-    float: left;
-    width:60%;
-}
-
-.content_right {
-    float: right;
-    width:40%;
-}
-
-/*centers search bar header and makes font bigger*/
-.search_header {
-    text-align:center;
-    font-size:35px;
-}
-
-/*all images should have a margin*/
-img {
-    margin:10px;
-
-}
-
-/*image border class gives image a rounded black border with a margin*/
-img.border {
-    border-style: solid;
-    border-width: 4px;
-    border-radius: 10px;
-    border-color: black;
-}
-
-img.featured_border {
-    border-style: solid;
-    border-width: 4px;
-    border-radius: 10px;
-    border-color: gold;
-}
-
-/*class to style footer to be centered and gives it a margin*/
-.footer {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom:20px;
-    text-align:center;
-    clear:both;
-}
-
-/*gives nav header of current page a grey border*/
-.active {
-    padding: 8px;
-    border-width:10px;
-    border-radius:2px;
-    background-color:#2f2b2b;
-}
-
-/*hides element so it's invisible*/
-.hide {
-    border: 0;
-    height:1px;
-    margin:-1px;
-    overflow:hidden;
-    padding:0;
-    position:absolute;
-    width:1px;
-}
-
-/*classes to change color and size depending on review ranking*/
-.top_user {
-    color:gold;
-    font-size:130%;
-}
-
-.second_place {
-    color:silver;
-    font-size:120%;
-}
-
-.third_place {
-    color: #CE8946;
-    font-size:110%;
-}
-
-/*featured review is colored aquamarine and has its font size increased*/
-.featuredReviewEntry {
-    color:aquamarine;
-    font-size: 115%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-/*featured review is colored aquamarine and has its font size increased*/
-.featuredListEntry {
-    color:aqua;
-    font-size: 115%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-/*makes a text box that floats to the left for the featured users, reviews, and lists*/
-.featured {
-    float:left;
-    margin: 25px;
-    width:300px;
-}
-
-/*rules for screens 1600px and under*/
-@media only screen and (max-width:1300px) {
-    .content_right {
-        float: none;
-        width:100%;
+/*GENERAL STYLING FOR ELEMENTS*/
+    /*sets background color to a dark grey*/
+    body {
+        background-color: #2f2b2b;
     }
 
-    .float_right {
-        float:none;
-    }
-    .content {
-        width:100%;
-    }
-    .content_left {
-        float: none;
-        width:100%;
-    }
-    .float_left {
-        float:none;
-    }
-    .featured {
-        float:none;
-    }
-}
-
-/*rules for screen sizes under 600*/
-@media only screen and (max-width:600px) {
-    /*clear floats*/
-    .header_links {
-        float: none;
-        text-align: right;
+    /*general font is set to Arial with a white color*/
+    p {
+        font-family:Arial, Helvetica, sans-serif;
+        color:azure;
     }
 
-    /*set content width to make and increase font to make it more readable*/
-    .content {
-        width: 100%;
-        font-size: 150%;
+    label {
+        font-family:Arial, Helvetica, sans-serif;
+        color:azure;
     }
 
-    /*make images scale to the smaller screen size*/
+    li {
+        padding-bottom: 10px;
+    }
+
+    ul {
+        font-family:Arial, Helvetica, sans-serif;
+        color:azure; 
+    }
+
+    ol {
+        font-family:Arial, Helvetica, sans-serif;
+        color:azure; 
+    }
+
+    /*tables have a light grey background*/
+    table {
+        font-family:Arial, Helvetica, sans-serif;
+        color:azure;
+        background-color:#403a3a;
+    }
+
+    /*puts a border on cells in a table*/
+    td, th {
+        text-align:center;
+        border-style:solid;
+        border-width: 2px;
+        border-color:black;
+        padding-top: 20px;
+        padding-bottom:20px;
+    }
+
+    /*all horizontal rules are colored blue to break up sections*/
+    hr {
+        border-width: 6px;
+        border-color:rgb(71, 71, 241);
+    }
+
+    /*untouched links are blue, visited links are purple, and hovered over links are light blue*/
+    a:link {
+        color:white;
+        padding: 8px;
+    }
+
+    a:visited {
+        color: rgb(76, 207, 255);
+        padding:8px;
+    }
+
+    /*active links have a white background with a red text color*/
+    a:active {
+        padding: 8px;
+        border-width:10px;
+        border-radius:2px;
+        background-color: white;
+        color:purple;
+    }
+
+    /*hovering over links makes the font size bigger*/
+    a:hover {
+        padding:8px;
+        color:aqua;
+    }
+
+    /*all images should have a margin*/
     img {
-        max-width: 100%;
-        height: auto;
+        margin:10px;
     }
-    .content_left {
-        float: none;
-        width:100%;
+
+    /*All headers are set to the Gill Sans font and colored white*/
+    h1 {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:white;
     }
-    .content_right {
-        float: none;
-        width:100%;
+
+    h2 {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:white;
     }
+
+    h3 {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:white;
+    }
+
+    h4 {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:white;
+    }
+
+    h5 {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:white;
+    }
+
+    h6 {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:white;
+    }
+
+    /*styles content to have a smaller width and center in the middle of the screen*/
+    .content {
+        width:75%;
+        background-color:#2f2b2b;
+        padding:10px;
+        margin: auto;
+    }
+
+    /*clears float*/
+    .clear {
+        clear:both;
+    }
+
+    /*classes to float img left, right, center*/
     .float_left {
-        float:none;
+        float:left;
     }
+
     .float_right {
-        float:none;
+        float:right;
     }
+
+    /*hides element so it's invisible*/
+    .hide {
+        border: 0;
+        height:1px;
+        margin:-1px;
+        overflow:hidden;
+        padding:0;
+        position:absolute;
+        width:1px;
+    }
+
+
+
+/*SYLING FOR HEADER AND FOOTER
+    /*header class sets overflow property, background color, and adds padding*/
+    .header {
+        overflow: hidden;
+        background-color:blue;
+        padding: 10px;
+    }
+
+    .header_logo {
+        border-width:4px;
+        border-radius:4px;
+        border-color:black;
+        float:left;
+    }
+
+    /*header links class floats the links to the right, changes text style, and adds padding*/
+    .header_links {
+        float:right;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:white;
+        font-size: large;
+        padding:5px;
+    }
+
+    /*gives nav header of current page a grey border*/
+    .active {
+        padding: 8px;
+        border-width:10px;
+        border-radius:2px;
+        background-color:#2f2b2b;
+    }
+
+    /*class to style footer to be centered and gives it a margin*/
+    .footer {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom:20px;
+        text-align:center;
+        clear:both;
+    }
+
+/*STYLING FOR HOMEPAGE*/
+
+    .content_left {
+        float: left;
+        width:60%;
+    }
+
+    .content_right {
+        float: right;
+        width:40%;
+    }
+
+
+    /*image border class gives image a rounded black border with a margin*/
+    img.border {
+        border-style: solid;
+        border-width: 4px;
+        border-radius: 10px;
+        border-color: black;
+    }
+
+    img.featured_border {
+        border-style: solid;
+        border-width: 4px;
+        border-radius: 10px;
+        border-color: gold;
+    }
+
+
+    /*classes to change color and size depending on review ranking*/
+    .top_user {
+        color:gold;
+        font-size:130%;
+    }
+
+    .second_place {
+        color:silver;
+        font-size:120%;
+    }
+
+    .third_place {
+        color: #CE8946;
+        font-size:110%;
+    }
+
+    /*featured review is colored aquamarine and has its font size increased*/
+    .featuredReviewEntry {
+        color:aquamarine;
+        font-size: 115%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*featured review is colored aquamarine and has its font size increased*/
+    .featuredListEntry {
+        color:aqua;
+        font-size: 115%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*makes a text box that floats to the left for the featured users, reviews, and lists*/
     .featured {
-        float:none;
+        float:left;
+        margin: 25px;
+        width:300px;
     }
 
 
-    
-}
+/*STYLING FOR REVIEWS PAGE*/
+
+    /*grey_background class gives text input fields a grey background and increases the font size*/
+    input.grey_background {
+        background-color:#403a3a;
+        border-width: 4px;
+        border-color:black;
+        border-radius: 4px;
+        font-size: medium;
+        color: white;
+    }
+
+
+    /*submit_button class gives form submission buttons grey with a black border*/
+    input.submit_button {
+        background-color:#2f2b2b;
+        color: azure;
+        border-width: 8px;
+        border-radius: 8px;
+        border-color:black;
+        font-size:large;
+    }
+
+    /*comment id is meant to give the review comment text area a grey background and icnreased font size*/
+    #comment {
+        font-family:Arial, Helvetica, sans-serif;
+        background-color:#403a3a;
+        border-width:4px;
+        border-radius:4px;
+        font-size: medium;
+        color: white;
+        border-color:black;
+    }
+
+    /*centers search bar header and makes font bigger*/
+    .search_header {
+        text-align:center;
+        font-size:35px;
+    }
+
+    /*displays review preview in a box*/
+    .previewCard {
+        float:left;
+        margin-left: 60px;
+    }
+
+    .reviewPreview {
+        font-size: 150%;
+        width: 440px;
+        height: 430px;
+        padding: 20px;
+
+        border-style:solid;
+        border-radius:1px;
+        border-width:5px;
+        border-color:black;
+    }
+
+    .radioRating {
+        margin-right: 5px;
+    }
+
+
+    /*warning and error messages for form submission gaining focus and losing focus*/
+    .warning {
+        color:yellow;
+    }
+
+    .error {
+        color:red;
+    }
+
+    /*displays stars and gold and the comment of the review preview in a light grey box*/
+    .star {
+        color:gold;
+    }
+
+    .commentPreview {
+        padding:10px;
+        width:420px;
+        height: 200px;
+        margin:auto;
+        background-color:#403a3a;
+    }
+
+    .reviewTable {
+        width:600px;
+        float:left;
+    }
+
+
+
+/*STYLING FOR LISTS PAGE*/
+
+
+
+
+/*ADAPTIVE SCREEN BEHAVIOR*/
+
+    /*rules for screens 1600px and under*/
+    @media only screen and (max-width:1300px) {
+        .content_right {
+            float: none;
+            width:100%;
+        }
+
+        .float_right {
+            float:none;
+        }
+        .content {
+            width:100%;
+        }
+        .content_left {
+            float: none;
+            width:100%;
+        }
+        .float_left {
+            float:none;
+        }
+        .featured {
+            float:none;
+        }
+        .previewCard {
+            float:none;
+            margin-left:0px;
+        }
+        .reviewTable {
+            float:none;
+        }
+    }
+
+    /*rules for screen sizes under 600*/
+    @media only screen and (max-width:600px) {
+        /*clear floats*/
+        .header_links {
+            float: none;
+            text-align: right;
+        }
+
+        /*set content width to make and increase font to make it more readable*/
+        .content {
+            width: 100%;
+            font-size: 150%;
+        }
+
+        /*make images scale to the smaller screen size*/
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .content_left {
+            float: none;
+            width:100%;
+        }
+        .content_right {
+            float: none;
+            width:100%;
+        }
+        .float_left {
+            float:none;
+        }
+        .float_right {
+            float:none;
+        }
+        .featured {
+            float:none;
+        }
+        .previewCard {
+            float:none;
+            margin-left:0px;
+        }
+        .reviewTable {
+            float:none;
+        }
+    }

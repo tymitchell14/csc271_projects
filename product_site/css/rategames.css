@@ -342,6 +342,11 @@ img.featured_border {
     background-color:#403a3a;
 }
 
+.reviewTable {
+    width:600px;
+    float:left;
+}
+
 /*rules for screens 1600px and under*/
 @media only screen and (max-width:1300px) {
     .content_right {

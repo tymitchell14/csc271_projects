@@ -1,20 +1,23 @@
 
 
+//function to display review given the game name, rating, and comment the user has inputted 
 function displayReview() {
+    //get the name and comment from the HTML elements
     var name = document.getElementById("gamename").value;
     var comment = document.getElementById("comment").value;
     var rating = "";
-   
+
     var ratingInput = document.querySelectorAll('input.radioRating');
     var numstars = 0;
 
+    //find which rating radio button was selected
     for(var i = 0; i < ratingInput.length; i++) {
-        console.log("hi");
         if(ratingInput[i].checked) {
             numstars = parseInt(ratingInput[i].value);
         }
     }
     
+    //create a string containing the number of stars in the rating
     for(var i = 0; i < 5; i++) {
         if(numstars > 0) {
             rating += "★";
@@ -25,11 +28,13 @@ function displayReview() {
         }
     }
 
+    //update the output inside of the preview box
     document.getElementById("reviewName").textContent = name;
     document.getElementById("reviewRating").textContent = rating;
     document.getElementById("reviewComment").textContent = comment;
 }
 
+//function that displays a message informing the user of the character limit
 function displayInputInfo() {
     var info = document.getElementById("inputinfo");
     info.textContent = "Must be no larger than 40 characters";

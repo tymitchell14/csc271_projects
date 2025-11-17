@@ -22,7 +22,7 @@ function review(username, title, rating, comment, likes) {
         starRating += "★".repeat(this.rating);
         starRating += "☆".repeat(5 - this.rating);
         return starRating;
-    }
+    };
 }
 
 //using a reviewCard node and a review, updates the text content in the review card to match the review

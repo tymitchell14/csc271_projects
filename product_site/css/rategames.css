@@ -321,6 +321,7 @@
         border-color:black;
     }
 
+
     .radioRating {
         margin-right: 5px;
     }
@@ -340,17 +341,51 @@
         color:gold;
     }
 
-    .commentPreview {
+    /*classes for displaying reviews*/
+
+    .reviewCard {
+        font-size: 120%;
+        width: 500px;
+        padding:20px;
+        
+        border-style: solid;
+        border-width: 3px;
+        border-color:black;
+
+        margin-bottom:30px;
+    }
+
+    .commentCard {
         padding:10px;
-        width:420px;
-        height: 200px;
         margin:auto;
         background-color:#403a3a;
     }
 
+    .username {
+        color:aqua;
+    }
+
+    /*make the like buttona  blue circle*/
+    .likeButton {
+        color:white;
+        background-color:blue;
+        border-style:solid;
+        border-width:2px;
+        border-radius:50px;
+        font-size:110%;
+        padding:8px;
+        width:50px;
+        height:50px;
+    }
+
+    .likeButton:hover {
+        background-color: rgb(72, 106, 240);
+    }
+
+    /*set width of review table*/
+
     .reviewTable {
         width:600px;
-        float:left;
     }
 
 
@@ -389,9 +424,7 @@
             float:none;
             margin-left:0px;
         }
-        .reviewTable {
-            float:none;
-        }
+
     }
 
     /*rules for screen sizes under 600*/
@@ -434,9 +467,7 @@
             float:none;
             margin-left:0px;
         }
-        .reviewTable {
-            float:none;
-        }
+   
         .reviewPreview {
             height: 600px;
         }

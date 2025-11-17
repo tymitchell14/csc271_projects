@@ -185,10 +185,10 @@
                 <div class = "previewCard">
                     <h2>Preview Review</h2>
                     <div class = "reviewPreview">
-                        <p>YourUserName</p>
+                        <p class = "username">YourUserName</p>
                         <p id = "reviewName"></p>
                         <p class = "star" id = "reviewRating"></p>
-                        <p class = "commentPreview" id = "reviewComment"></p>
+                        <p class = "commentCard" id = "reviewComment"></p>
                     </div>
                 </div>
 
@@ -198,119 +198,125 @@
                 <br class = "clear"> <hr>
             </div>
 
-            <!-- table listing the current most popular reviews -->
+            <!--display the current top two reviews of the day-->
 
-            <div class = "reviewTable">
+            <div class = "float_left">
 
-    
                 <h2>Popular Reviews</h2>
-                <table class = >
-                    <tr>
-                        <th>User</th>
-                        <th>Rating</th>
-                        <th>Game</th>
-                        <th>Review</th>
-                        <th>Likes</th>
-                    </tr>
-                    <tr>
-                        <td>smileycookie</td>
-                        <td>4/5</td>
-                        <td>Hollow Knight: Silksong&emsp;</td>
-                        <td>Fun and challenging</td>
-                        <td>759</td>
-                    </tr>
-                    <tr>
-                        <td>john28</td>
-                        <td>3/5</td>
-                        <td>Split Fiction&emsp;</td>
-                        <td>Fun game to play with a friend</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <td>angrytoaster</td>
-                        <td>1/5</td>
-                        <td>Donkey Kong Bananza&emsp;</td>
-                        <td>Thought it was boring</td>
-                        <td>427</td>
-                    </tr>
-                    <tr>
-                        <td>mrtaco</td>
-                        <td>5/5</td>
-                        <td>Mario Kart World&emsp;</td>
-                        <td>Feels great to play!</td>
-                        <td>512</td>
-                    </tr>
-                    <tr>
-                        <td>emily42</td>
-                        <td>2/5</td>
-                        <td>Monster Hunter Wilds&emsp;</td>
-                        <td>Bad performance issues</td>
-                        <td>478</td>
-                    </tr>
-                     <tr>
-                        <td>rocketman</td>
-                        <td>3/5</td>
-                        <td>Cyberpunk 2077&emsp;</td>
-                        <td>The game was rushed!</td>
-                        <td>465</td>
-                    </tr>
-                     <tr>
-                        <td>_cabbage_8</td>
-                        <td>4/5</td>
-                        <td>Enter The Gungeon&emsp;</td>
-                        <td>One of my favorite rogeulikes.</td>
-                        <td>432</td>
-                    </tr>
-                     <tr>
-                        <td>the_guy</td>
-                        <td>5/5</td>
-                        <td>Elden Ring&emsp;</td>
-                        <td>Best open world game I've played.</td>
-                        <td>418</td>
-                    </tr>
-                     <tr>
-                        <td>HADES_FAN</td>
-                        <td>5/5</td>
-                        <td>Hades 2&emsp;</td>
-                        <td>Even better than the first</td>
-                        <td>392</td>
-                    </tr>
-                     <tr>
-                        <td>cycle9</td>
-                        <td>3/5</td>
-                        <td>Sekiro&emsp;</td>
-                        <td>A little too hard for my taste.</td>
-                        <td>354</td>
-                    </tr>
-                     <tr>
-                        <td>gamefan10</td>
-                        <td>2/5</td>
-                        <td>Borderlands 4&emsp;</td>
-                        <td>Great game but terrible performance</td>
-                        <td>328</td>
-                    </tr>
-                     <tr>
-                        <td>10pj97</td>
-                        <td>4/5</td>
-                        <td>Dark Souls 2&emsp;</td>
-                        <td>Great but frustrating</td>
-                        <td>314</td>
-                    </tr>
-                     <tr>
-                        <td>meet_boy</td>
-                        <td>5/5</td>
-                        <td>Nine Sols&emsp;</td>
-                        <td>Amazing combat and bosses!</td>
-                        <td>289</td>
-                    </tr>
-                     <tr>
-                        <td>heythere</td>
-                        <td>3/5</td>
-                        <td>Elden Ring Nightreign&emsp;</td>
-                        <td>Needs more randomization.</td>
-                        <td>257</td>
-                    </tr>
-                </table>
+                <div class = "reviewCard">
+                    <p class = "username"></p>
+                    <p></p>
+                    <p class = "star"></p>
+                    <p class = "commentCard"></p>
+                    <p></p>
+                    <button class = "likeButton" id = "likeButton1" type = "button">❤</button>
+                </div>
+
+                <div class = "reviewCard">
+                    <p class = "username"></p>
+                    <p></p>
+                    <p class = "star"></p>
+                    <p class = "commentCard"></p>
+                    <p></p>
+                    <button class = "likeButton" id = "likeButton2" type = "button">❤</button>
+
+                </div>
+
+                <!-- table listing the current most popular reviews -->
+                <div class = "reviewTable">
+
+                    <h2>Recent Reviews</h2>
+                    <table class = >
+                        <tr>
+                            <th>User</th>
+                            <th>Rating</th>
+                            <th>Game</th>
+                            <th>Review</th>
+                            <th>Likes</th>
+                        </tr>
+
+                        <tr>
+                            <td>angrytoaster</td>
+                            <td>1/5</td>
+                            <td>Donkey Kong Bananza&emsp;</td>
+                            <td>Thought it was boring</td>
+                            <td>427</td>
+                        </tr>
+
+                        <tr>
+                            <td>mrtaco</td>
+                            <td>5/5</td>
+                            <td>Mario Kart World&emsp;</td>
+                            <td>Feels great to play!</td>
+                            <td>512</td>
+                        </tr>
+
+                        <tr>
+                            <td>emily42</td>
+                            <td>2/5</td>
+                            <td>Monster Hunter Wilds&emsp;</td>
+                            <td>Bad performance issues</td>
+                            <td>478</td>
+                        </tr>
+
+                        <tr>
+                            <td>rocketman</td>
+                            <td>3/5</td>
+                            <td>Cyberpunk 2077&emsp;</td>
+                            <td>The game was rushed!</td>
+                            <td>465</td>
+                        </tr>
+
+                        <tr>
+                            <td>_cabbage_8</td>
+                            <td>4/5</td>
+                            <td>Enter The Gungeon&emsp;</td>
+                            <td>One of my favorite rogeulikes.</td>
+                            <td>432</td>
+                        </tr>
+
+                        <tr>
+                            <td>the_guy</td>
+                            <td>5/5</td>
+                            <td>Elden Ring&emsp;</td>
+                            <td>Best open world game I've played.</td>
+                            <td>418</td>
+                        </tr>
+
+                        <tr>
+                            <td>HADES_FAN</td>
+                            <td>5/5</td>
+                            <td>Hades 2&emsp;</td>
+                            <td>Even better than the first</td>
+                            <td>392</td>
+                        </tr>
+
+                        <tr>
+                            <td>cycle9</td>
+                            <td>3/5</td>
+                            <td>Sekiro&emsp;</td>
+                            <td>A little too hard for my taste.</td>
+                            <td>354</td>
+                        </tr>
+
+                        <tr>
+                            <td>gamefan10</td>
+                            <td>2/5</td>
+                            <td>Borderlands 4&emsp;</td>
+                            <td>Great game but terrible performance</td>
+                            <td>328</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>10pj97</td>
+                            <td>4/5</td>
+                            <td>Dark Souls 2&emsp;</td>
+                            <td>Great but frustrating</td>
+                            <td>314</td>
+                        </tr>
+        
+                    </table>
+                </div>
             </div>
 
             <!-- List of embedded popular youtube reviews created by gaming journalist outlets such as IGN and GameSpot-->
@@ -347,6 +353,7 @@
         </div>
 
         <script src = "js/review_display.js"></script>
+        <script src = "js/popular_review.js"></script>
 
     </body>
 

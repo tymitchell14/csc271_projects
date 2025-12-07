@@ -35,20 +35,30 @@
     }
 
     /*tables have a light grey background*/
+    th {
+        text-align:center;
+        color:aqua;
+        font-size: 125%;
+        padding:30px;
+        border-width:3px;
+        border-style:solid;
+        border-color:black;
+    }
     table {
         font-family:Arial, Helvetica, sans-serif;
-        color:azure;
-        background-color:#403a3a;
+        border-style:solid;
+        border-width: 5px;
+        border-radius: 20px;
+        border-color: blue;
+        border-collapse: collapse;
     }
 
-    /*puts a border on cells in a table*/
-    td, th {
-        text-align:center;
+    td {
+        color:azure;
+        border-width:3px;
         border-style:solid;
-        border-width: 2px;
         border-color:black;
-        padding-top: 20px;
-        padding-bottom:20px;
+        padding: 20px;
     }
 
     /*all horizontal rules are colored blue to break up sections*/
@@ -152,6 +162,42 @@
         width:1px;
     }
 
+    .centerHeader {
+        text-align:center;
+        font-size:150%;
+    }
+
+        /*grey_background class gives text input fields a grey background and increases the font size*/
+    input.grey_background {
+        background-color:#2f2b2b;
+        border-style:solid;
+        border-width: 4px;
+        border-color:rgb(74, 74, 74);
+        border-radius: 4px;
+        font-size: medium;
+        color: white;
+    }
+
+
+    /*submit_button class gives form submission buttons grey with a black border*/
+    input.button {
+        background-color:#2f2b2b;
+        padding:10px;
+        border-style:solid;
+        color: azure;
+        border-width: 4px;
+        border-radius: 8px;
+        border-color:rgb(74, 74, 74);
+        font-size:large;
+    }
+    
+    /*set width of a table*/
+    .recentTable {
+        width:800px;
+        align-items:center;
+        margin:auto;
+    }
+
 
 
 /*SYLING FOR HEADER AND FOOTER
@@ -171,11 +217,18 @@
 
     /*header links class floats the links to the right, changes text style, and adds padding*/
     .header_links {
+        margin-top:20px;
         float:right;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color:white;
         font-size: large;
         padding:5px;
+    }
+
+    .header_item {
+        display:inline;
+        padding-left:10px;
+        padding-right:10px;
     }
 
     /*gives nav header of current page a grey border*/
@@ -195,6 +248,7 @@
         text-align:center;
         clear:both;
     }
+
 
 /*STYLING FOR HOMEPAGE*/
 
@@ -265,43 +319,21 @@
 
 /*STYLING FOR REVIEWS PAGE*/
 
-    /*grey_background class gives text input fields a grey background and increases the font size*/
-    input.grey_background {
-        background-color:#403a3a;
-        border-width: 4px;
-        border-color:black;
-        border-radius: 4px;
-        font-size: medium;
-        color: white;
-    }
 
-
-    /*submit_button class gives form submission buttons grey with a black border*/
-    input.submit_button {
-        background-color:#2f2b2b;
-        color: azure;
-        border-width: 8px;
-        border-radius: 8px;
-        border-color:black;
-        font-size:large;
-    }
-
-    /*comment id is meant to give the review comment text area a grey background and icnreased font size*/
+    /*comment id is meant to give the review comment text area a grey background and increased font size*/
     #comment {
+        background-color:#2f2b2b;
         font-family:Arial, Helvetica, sans-serif;
-        background-color:#403a3a;
-        border-width:4px;
-        border-radius:4px;
+        border-width:6px;
+        border-radius:8px;
         font-size: medium;
-        color: white;
-        border-color:black;
+        color: azure;
+        border-color:rgb(74, 74, 74);
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
-    /*centers search bar header and makes font bigger*/
-    .search_header {
-        text-align:center;
-        font-size:35px;
-    }
 
     /*displays review preview in a box*/
     .previewCard {
@@ -312,7 +344,7 @@
     .reviewPreview {
         font-size: 150%;
         width: 440px;
-        height: 430px;
+        height: 480px;
         padding: 20px;
 
         border-style:solid;
@@ -320,7 +352,6 @@
         border-width:5px;
         border-color:black;
     }
-
 
     .radioRating {
         margin-right: 5px;
@@ -344,7 +375,6 @@
     /*classes for displaying reviews*/
 
     .reviewCard {
-        font-size: 120%;
         width: 500px;
         padding:20px;
         
@@ -382,11 +412,7 @@
         background-color: rgb(72, 106, 240);
     }
 
-    /*set width of review table*/
 
-    .reviewTable {
-        width:600px;
-    }
 
 
 
@@ -397,7 +423,7 @@
 
 /*ADAPTIVE SCREEN BEHAVIOR*/
 
-    /*rules for screens 1600px and under*/
+    /*rules for screens 1300px and under*/
     @media only screen and (max-width:1300px) {
         .content_right {
             float: none;
@@ -427,18 +453,36 @@
 
     }
 
+    /*rules for screen sizes under 800*/
+    @media only screen and (max-width:800px) {
+        .header_item {
+            display:block;
+            float:none;
+        }
+        .header_logo {
+            float:none;
+        }
+        .reviewTable {
+            width:500px;
+        }
+        th {
+            padding: 0px;
+            margin:0px;
+        }
+        td {
+            padding:0px;
+            margin:0px;
+        }
+
+    }
+
     /*rules for screen sizes under 600*/
     @media only screen and (max-width:600px) {
-        /*clear floats*/
-        .header_links {
-            float: none;
-            text-align: right;
-        }
 
         /*set content width to make and increase font to make it more readable*/
         .content {
             width: 100%;
-            font-size: 150%;
+            font-size: 120%;
         }
 
         /*make images scale to the smaller screen size*/
@@ -470,5 +514,8 @@
    
         .reviewPreview {
             height: 600px;
+        }
+        .reviewTable {
+            width: 500px;
         }
     }

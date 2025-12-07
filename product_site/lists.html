@@ -55,14 +55,12 @@
                 <div class = "header_links">
 
                     <!-- navigation bar which will contain the links that go to different pages on the website, the logo links to the homepage -->
-                    <h3>
-                        <a href = "homepage.html">Homepage</a>&emsp;
-                        <a href = "reviews.html">Reviews</a>&emsp;
-                        <a href = "lists.html" class = "active">Lists</a>&emsp;
-                        About Us&emsp;
-                        FAQ&emsp;
-                        Profile
-                    </h3>
+                    <h3 class = "header_item"><a href = "homepage.html">Homepage</a></h3>
+                    <h3 class = "header_item"><a href = "reviews.html" >Reviews</a></h3>
+                    <h3 class = "header_item active"><a href = "lists.html">Lists</a></h3>
+                    <h3 class = "header_item">About Us</h3>
+                    <h3 class = "header_item">FAQ</h3>
+                    <h3 class = "header_item">Profile</h3>
 
                 </div>
 
@@ -94,7 +92,7 @@
                 </div>
                 <div class = "float_right">
                     <p>
-                        <input id = "list_search_submit" class = "submit_button" type = "submit" value = "Submit">
+                        <input id = "list_search_submit" class = "button" type = "submit" value = "Submit">
                         <label class = "hide" for = "list_search_submit">Submit List Search</label>
                     </p>
                 </div>
@@ -157,16 +155,36 @@
                         </li>
                     </ul>
                     <p>
-                        <input id = "list_create" class = "submit_button" type = "submit" value = "Create List">
+                        <label class = "hide" for = "list-preview">Preview List</label>
+                        <input id = "list-preview" class = "button" type = "button" value = "Preview List">
+                        <input id = "list_create" class = "button" type = "submit" value = "Create List">
                         <label class = "hide" for = "list_create">Create List</label>
                     </p>
                 </form>
             </div>
 
-            <div class = "float_right">
-                <!-- table showcasing the current most popular user created lists -->
+            <div>
+                <h2>Preview List</h2>
+                <h2 class></h2>
+                <p></p>
+                <ul>
+                    <li class = "listPreviewItem"></li>
+                    <li class = "listPreviewItem"></li>
+                    <li class = "listPreviewItem"></li>
+                    <li class = "listPreviewItem"></li>
+                    <li class = "listPreviewItem"></li>
+                    <li class = "listPreviewItem"></li>
+                    <li class = "listPreviewItem"></li>
+                    <li class = "listPreviewItem"></li>
+                    <li class = "listPreviewItem"></li>
+                    <li class = "listPreviewItem"></li>
+                </ul>
+            </div>
 
-                <h2>Popular User Created Lists</h2>
+            <hr class = "clear">
+            <!-- table showcasing the current most popular user created lists -->
+            <div class = "recentTable">
+                <h2 class = "centerHeader">Popular User Created Lists</h2>
                 <table>
                     <tr>
                         <th>Username</th>

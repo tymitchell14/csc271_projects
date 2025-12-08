@@ -37,14 +37,16 @@ function updateReview(reviewCard, review) {
 }
 
 
-//create two reviews with the review class
+//create three reviews with the review class
 var review1 = new review("john28", "Split Fiction", 3, "Fun game to play with a friend", 1000);
 var review2 = new review("smileycookie", "Hollow Knight Silksong", 4, "Fun and challenging", 759);
+var review3 = new review("angrytoaster", "Donkey Kong Bananza", 1, "Thought it was boring", 427);
 
-var reviews = [review1, review2];
+var reviews = [review1, review2, review3];
 
 var likeButton1 = document.getElementById("likeButton1");
 var likeButton2 = document.getElementById("likeButton2");
+var likeButton3 = document.getElementById("likeButton3");
 
 var reviewCards = document.querySelectorAll('.reviewCard');
 
@@ -64,5 +66,12 @@ likeButton2.addEventListener('click', function() {
     review2.like();
     updateReview(reviewCards[1], reviews[1]);
 }, false);
+
+likeButton3.addEventListener('click', function() {
+    review3.like();
+    updateReview(reviewCards[2], reviews[2]);
+}, false);
+
+
 
 

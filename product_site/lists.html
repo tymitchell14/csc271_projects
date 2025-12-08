@@ -55,14 +55,12 @@
                 <div class = "header_links">
 
                     <!-- navigation bar which will contain the links that go to different pages on the website, the logo links to the homepage -->
-                    <h3>
-                        <a href = "homepage.html">Homepage</a>&emsp;
-                        <a href = "reviews.html">Reviews</a>&emsp;
-                        <a href = "lists.html" class = "active">Lists</a>&emsp;
-                        About Us&emsp;
-                        FAQ&emsp;
-                        Profile
-                    </h3>
+                    <h3 class = "header_item"><a href = "homepage.html">Homepage</a></h3>
+                    <h3 class = "header_item"><a href = "reviews.html" >Reviews</a></h3>
+                    <h3 class = "header_item active"><a href = "lists.html">Lists</a></h3>
+                    <h3 class = "header_item">About Us</h3>
+                    <h3 class = "header_item">FAQ</h3>
+                    <h3 class = "header_item">Profile</h3>
 
                 </div>
 
@@ -94,7 +92,7 @@
                 </div>
                 <div class = "float_right">
                     <p>
-                        <input id = "list_search_submit" class = "submit_button" type = "submit" value = "Submit">
+                        <input id = "list_search_submit" class = "button" type = "submit" value = "Submit">
                         <label class = "hide" for = "list_search_submit">Submit List Search</label>
                     </p>
                 </div>
@@ -109,64 +107,87 @@
                 <form action = "lists.html">
                     <p>
                         <label for = "enter_list_name">Enter list name</label> <br>
-                        <input id ="enter_list_name" class = "grey_background" type = "text" name = "list_name" size = "60" maxlength = "60" required>
+                        <input id ="enter_list_name" class = "grey_background" type = "text" name = "list_name" size = "55" maxlength = "45" required>
                     </p>
 
                     <h3>Add games to your list</h3>
                     <ul>
                         <li> 
-                            <input id = "list_entry1" class = "grey_background" type = "text" name = "list_item1" size = "45" maxlength = "60"> 
+                            <input id = "list_entry1" class = "list_entry" type = "text" name = "list_item1" size = "55" maxlength = "45"> 
                             <label class = "hide" for = "list_entry1">Enter list entry 1</label>
                         </li>
                         <li> 
-                            <input id = "list_entry2" class = "grey_background" type = "text" name = "list_item2" size = "45" maxlength = "60"> 
+                            <input id = "list_entry2" class = "list_entry" type = "text" name = "list_item2" size = "55" maxlength = "45"> 
                             <label class = "hide" for = "list_entry2">Enter list entry 2</label>
 
                         </li>
                         <li> 
-                            <input id = "list_entry3" class = "grey_background" type = "text" name = "list_item3" size = "45" maxlength = "60"> 
+                            <input id = "list_entry3" class = "list_entry" type = "text" name = "list_item3" size = "55" maxlength = "45"> 
                             <label class = "hide" for = "list_entry3">Enter list entry 3</label>
                         </li>
                         <li> 
-                            <input id = "list_entry4" class = "grey_background" type = "text" name = "list_item4" size = "45" maxlength = "60"> 
+                            <input id = "list_entry4" class = "list_entry" type = "text" name = "list_item4" size = "55" maxlength = "45"> 
                             <label class = "hide" for = "list_entry4">Enter list entry 4</label>
                         </li>
                         <li> 
-                            <input id = "list_entry5" class = "grey_background" type = "text" name = "list_item5" size = "45" maxlength = "60"> 
+                            <input id = "list_entry5" class = "list_entry" type = "text" name = "list_item5" size = "55" maxlength = "45"> 
                             <label class = "hide" for = "list_entry5">Enter list entry 5</label>
                         </li>
                         <li> 
-                            <input id = "list_entry6" class = "grey_background" type = "text" name = "list_item6" size = "45" maxlength = "60"> 
+                            <input id = "list_entry6" class = "list_entry" type = "text" name = "list_item6" size = "55" maxlength = "45"> 
                             <label class = "hide" for = "list_entry6">Enter list entry 6</label>
                         </li>
                         <li> 
-                            <input id = "list_entry7" class = "grey_background" type = "text" name = "list_item7" size = "45" maxlength = "60"> 
+                            <input id = "list_entry7" class = "list_entry" type = "text" name = "list_item7" size = "55" maxlength = "45"> 
                             <label class = "hide" for = "list_entry7">Enter list entry 7</label>
                         </li>
                         <li> 
-                            <input id = "list_entry8" class = "grey_background" type = "text" name = "list_item8" size = "45" maxlength = "60"> 
+                            <input id = "list_entry8" class = "list_entry" type = "text" name = "list_item8" size = "55" maxlength = "45"> 
                             <label class = "hide" for = "list_entry8">Enter list entry 8</label>
                         </li>
                         <li> 
-                            <input id = "list_entry9" class = "grey_background" type = "text" name = "list_item9" size = "45" maxlength = "60"> 
+                            <input id = "list_entry9" class = "list_entry" type = "text" name = "list_item9" size = "55" maxlength = "45"> 
                             <label class = "hide" for = "list_entry9">Enter list entry 9</label>
                         </li>
                         <li> 
-                            <input id = "list_entry10" class = "grey_background" type = "text" name = "list_item10" size = "45" maxlength = "60"> 
+                            <input id = "list_entry10" class = "list_entry" type = "text" name = "list_item10" size = "55" maxlength = "45"> 
                             <label class = "hide" for = "list_entry10">Enter list entry 10</label>
                         </li>
                     </ul>
                     <p>
-                        <input id = "list_create" class = "submit_button" type = "submit" value = "Create List">
+                        <label class = "hide" for = "list-preview">Preview List</label>
+                        <input id = "list-preview" class = "button" type = "button" value = "Preview List">
+                        <input id = "list_create" class = "button" type = "submit" value = "Create List">
                         <label class = "hide" for = "list_create">Create List</label>
                     </p>
                 </form>
             </div>
 
-            <div class = "float_right">
-                <!-- table showcasing the current most popular user created lists -->
+            <!--preview list section shows a preview of what the user's list will look like when posted-->
+            <div class = "listPreviewCard">
+                <h2>Preview List</h2>
+                <div class = "listPreview">
+                    <h2 class = "listPreviewName" class></h2>
+                    <p>by YourUsername</p>
+                    <ul>
+                        <li class = "preview_list_entry"></li>
+                        <li class = "preview_list_entry"></li>
+                        <li class = "preview_list_entry"></li>
+                        <li class = "preview_list_entry"></li>
+                        <li class = "preview_list_entry"></li>
+                        <li class = "preview_list_entry"></li>
+                        <li class = "preview_list_entry"></li>
+                        <li class = "preview_list_entry"></li>
+                        <li class = "preview_list_entry"></li>
+                        <li class = "preview_list_entry"></li>
+                    </ul>
+                </div>
+            </div>
 
-                <h2>Popular User Created Lists</h2>
+            <hr class = "clear">
+            <!-- table showcasing the current most popular user created lists -->
+            <div class = "listTable">
+                <h2 class = "centerHeader">Popular User Created Lists</h2>
                 <table>
                     <tr>
                         <th>Username</th>
@@ -206,10 +227,14 @@
                 <br>
                 <hr> <br>
                 <!-- footer showing where to contact us (my email) and privacy policy-->
-                <h3>&emsp;<a href = "mailto:ty_mitchell@uri.edu">Contact Us</a>&emsp;&emsp;&emsp;Privacy Policy</h3>
+                <h3 class = "footer_item"><a href = "mailto:ty_mitchell@uri.edu">Contact Us</a></h3>
+                <h3 class = "footer_item">Privacy Policy</h3>
             </div>
 
         </div>
+
+        <script src = "js/list_display.js"></script>
+
 
 
 

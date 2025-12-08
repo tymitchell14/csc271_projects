@@ -42,7 +42,7 @@
         padding:30px;
         border-width:3px;
         border-style:solid;
-        border-color:black;
+        border-color:rgb(74, 74, 74);
     }
     table {
         font-family:Arial, Helvetica, sans-serif;
@@ -57,7 +57,7 @@
         color:azure;
         border-width:3px;
         border-style:solid;
-        border-color:black;
+        border-color:rgb(74, 74, 74);
         padding: 20px;
     }
 
@@ -167,7 +167,7 @@
         font-size:150%;
     }
 
-        /*grey_background class gives text input fields a grey background and increases the font size*/
+    /*grey_background class gives text input fields a grey background and increases the font size*/
     input.grey_background {
         background-color:#2f2b2b;
         border-style:solid;
@@ -226,6 +226,12 @@
     }
 
     .header_item {
+        display:inline;
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .footer_item {
         display:inline;
         padding-left:10px;
         padding-right:10px;
@@ -350,7 +356,7 @@
         border-style:solid;
         border-radius:1px;
         border-width:5px;
-        border-color:black;
+        border-color:rgb(74, 74, 74);
     }
 
     .radioRating {
@@ -380,7 +386,7 @@
         
         border-style: solid;
         border-width: 3px;
-        border-color:black;
+        border-color:rgb(74, 74, 74);
 
         margin-bottom:30px;
     }
@@ -411,12 +417,66 @@
     .likeButton:hover {
         background-color: rgb(72, 106, 240);
     }
+     /*set width of a table*/
+    .recentTable {
+        width:800px;
+        align-items:center;
+        margin:auto;
+    }
 
 
 
 
 
 /*STYLING FOR LISTS PAGE*/
+
+    /*creates a grey border around the list form entries*/
+    .list_entry {
+        background-color:#2f2b2b;
+        border-style:solid;
+        border-width: 4px;
+        border-color:rgb(74, 74, 74);
+        border-radius: 4px;
+        font-size: medium;
+        color: white;
+        padding:3px;
+    }
+
+    /*spaces out the list entries for the preview*/
+    .preview_list_entry {
+        margin-bottom: 6px;
+        font-size:110%;
+    }
+
+    /*displays list preview in a box*/
+    .listPreviewCard {
+        float:right;
+    }
+
+    /*creates a border around the list preview*/
+    .listPreview {
+        width: 430px;
+        height: 480px;
+        padding: 20px;
+
+        border-style:solid;
+        border-radius:5px;
+        border-width:5px;
+        border-color:rgb(74, 74, 74);
+    }
+
+    /*makes the list preview name blue with a bigger font size*/
+    .listPreviewName {
+        font-size:110%;
+        color: aqua;
+    }
+
+    /*sets a width for the list table and centers it*/
+    .listTable {
+        width: 550px;
+        margin:auto;
+        align-items:center;
+    }
 
 
 
@@ -450,6 +510,14 @@
             float:none;
             margin-left:0px;
         }
+        .listPreview {
+            float:none;
+            width:450px;
+        }
+        .listPreviewCard {
+            float:none;
+            margin-left:0px;
+        }
 
     }
 
@@ -462,8 +530,8 @@
         .header_logo {
             float:none;
         }
-        .reviewTable {
-            width:500px;
+        .recentTable {
+            width:550px;
         }
         th {
             padding: 0px;
@@ -472,6 +540,9 @@
         td {
             padding:0px;
             margin:0px;
+        }
+        .listTable {
+            width: 400px;
         }
 
     }
@@ -511,11 +582,17 @@
             float:none;
             margin-left:0px;
         }
-   
         .reviewPreview {
             height: 600px;
         }
-        .reviewTable {
+        .recentTable {
             width: 500px;
         }
+        .footer_item {
+            display:block;
+        }
+        .listTable {
+            width:300px;
+        }
+
     }
